@@ -1,0 +1,62 @@
+  public Dictionary<DayOfWeek, Dictionary<TimeSpan, int>> GetFreeLanes(Pool pol, DateTime date)
+        {
+            Dictionary<DayOfWeek, Dictionary<TimeSpan, int>> dicti = new Dictionary<DayOfWeek, Dictionary<TimeSpan, int>>();
+
+            TimeSpan increment = new TimeSpan(0, 45, 0);
+            Days first = (Days) date.DayOfWeek;
+
+            TimeSpan inici = new TimeSpan(8, 0, 0);
+            TimeSpan fi = inici.Add(increment);
+
+           // ICollection<int> lanesAvailable = new List<int>();
+            bool lliure = true;
+            int lanesAvailable=0;
+            IEnumerable<Course> cursos = service.GetAll<Course>().Where(c => c.CourseDays == first);
+            //DIA --- DIA -INTERVALS -- CARRILS LLIURES
+            //Array[Boolean] lineesDisponibles = new 
+            
+            while(inici < new TimeSpan(21, 0, 0))
+            {
+                lliure = true;
+
+                foreach (Course c in cursos)
+                {
+
+                    TimeSpan auxInici = new TimeSpan(c.StartHour.Hour, c.StartHour.Minute, c.StartHour.Second);
+                    TimeSpan auxFi = auxInici.Add(c.Duration);
+                    if (auxInici > fi || auxFi < inici)
+                    { 
+                        foreach(Lane l in c.Lanes)
+                        {
+                            lanesAvailable++;
+                        }
+                    }else
+                    {
+                        foreach (Lane l in c.Lanes)
+                        {
+                            lanesAvailable--;
+                        }
+                }
+
+                if (lliure) {
+                        Dictionary<TimeSpan, int> insertar = dicti.GetObjectData(first);
+
+                        dicti.Add(first, new Dictionary<TimeSpan, int>(inici, lanesAvailable);
+                    }
+
+                inici = fi;
+                fi = fi.Add(increment);
+
+            }
+
+                bool[] algo = new bool[1000];
+                algo[1] = null;
+
+            
+
+
+            return dicti;
+        }
+        
+
+    }

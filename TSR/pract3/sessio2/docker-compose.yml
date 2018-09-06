@@ -1,0 +1,35 @@
+version: '2'
+services:
+  wor: 
+    image: worker
+    build: ./worker/
+    links:
+      - bro
+      - log
+    environment:
+      - BROKER_URL=tcp://bro:8060
+      - LOGGER_URL=tcp://log:8066
+  cli:
+    image: client
+    build: ./client/
+    links:
+      - bro
+      - log
+    environment:
+      - BROKER_URL=tcp://bro:8059
+      - LOGGER_URL=tcp://log:8066
+  bro:
+    image: broker
+    build: ./broker/
+    links:
+      - log
+    expose:
+      - "8059"
+      - "8060"
+    environment:
+      - LOGGER_URL=tcp://log:8066
+  log:
+    image: logger
+    build: ./cbw_log/
+    volumes:
+      - /root/pract3/sessio2/cbw_log/logger.log:/tmp/myfile.log

@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="file:///C:/PROGRAM FILES (X86)/MICROSOFT VISUAL STUDIO 14.0/COMMON7/IDE/EXTENSIONS/MICROSOFT/ARCHITECTURE TOOLS/EXTENSIBILITY/Logging/CodeGenLog.xslt"?>
+<Log xmlns="http://schemas.microsoft.com/VisualStudio/2010/CodeGen.RE.Log" Label="Registro de generación de código/transformación de texto">
+  <MessageClass Name="Message" Label="Mensaje" Option="Mostrar mensajes informativos" />
+  <MessageClass Name="Warning" Label="Advertencia" Option="Mostrar advertencias" />
+  <MessageClass Name="Error" Label="Error" Option="Mostrar errores" />
+  <MessageClass Name="Property" Label="Propiedad" Option="Mostrar metadatos" />
+  <MessageClass Name="Diagnostic" Label="Mensaje" Option="Mostrar mensajes de diagnóstico" />
+  <Message Timestamp="2017-10-17T20:41:55" Importance="High" Text="Se inició la generación de código o la transformación de texto." />
+  <Message Timestamp="2017-10-17T20:41:55" Importance="Diagnostic" Text="Nombre = ClassTemplate" />
+  <Message Timestamp="2017-10-17T20:41:55" Importance="Diagnostic" Text="Sobrescribir = True" />
+  <Message Timestamp="2017-10-17T20:41:55" Importance="Diagnostic" Text="ProjectPath = ..\GestDepModelLib\GestDepModelLib.csproj" />
+  <Message Timestamp="2017-10-17T20:41:55" Importance="Diagnostic" Text="TargetDirectory = GeneratedCode\{PackageStructure}" />
+  <Message Timestamp="2017-10-17T20:41:55" Importance="Diagnostic" Text="TargetName = {Name}" />
+  <Message Timestamp="2017-10-17T20:41:55" Importance="Diagnostic" Text="TemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4" />
+  <Message Timestamp="2017-10-17T20:41:55" Importance="Diagnostic" Text="ResolvedTemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4" />
+  <Message Timestamp="2017-10-17T20:41:55" Importance="Medium" Text="Enlace de plantilla de texto de GestDepModel: 'ClassTemplate' aplicará ClassTemplate.t4 a: 'GestDepModel::GestDepLib.Entities::Person' -  (Class), 'GestDepModel::GestDepLib.Entities::Payment' -  (Class), 'GestDepModel::GestDepLib.Entities::Pool' -  (Class), 'GestDepModel::GestDepLib.Entities::Enrollment' -  (Class), 'GestDepModel::GestDepLib.Entities::Lane' -  (Class), 'GestDepModel::GestDepLib.Entities::User' -  (Class), 'GestDepModel::GestDepLib.Entities::Monitor' -  (Class), 'GestDepModel::GestDepLib.Entities::Course' -  (Class) " />
+  <Message Timestamp="2017-10-17T20:42:08" Importance="Medium" Text="'GestDepModel::GestDepLib.Entities::Person' -  (Class): correcto (archivo reemplazado) - D:\Git\UPV\practiquesisw\GestDepModelLib\GeneratedCode\GestDepLib.Entities\Person.cs" />
+  <Message Timestamp="2017-10-17T20:42:08" Importance="Medium" Text="'GestDepModel::GestDepLib.Entities::Payment' -  (Class): correcto (archivo reemplazado) - D:\Git\UPV\practiquesisw\GestDepModelLib\GeneratedCode\GestDepLib.Entities\Payment.cs" />
+  <Message Timestamp="2017-10-17T20:42:08" Importance="Medium" Text="'GestDepModel::GestDepLib.Entities::Pool' -  (Class): correcto (archivo reemplazado) - D:\Git\UPV\practiquesisw\GestDepModelLib\GeneratedCode\GestDepLib.Entities\Pool.cs" />
+  <Message Timestamp="2017-10-17T20:42:08" Importance="Medium" Text="'GestDepModel::GestDepLib.Entities::Enrollment' -  (Class): correcto (archivo reemplazado) - D:\Git\UPV\practiquesisw\GestDepModelLib\GeneratedCode\GestDepLib.Entities\Enrollment.cs" />
+  <Message Timestamp="2017-10-17T20:42:08" Importance="Medium" Text="'GestDepModel::GestDepLib.Entities::Lane' -  (Class): correcto (archivo reemplazado) - D:\Git\UPV\practiquesisw\GestDepModelLib\GeneratedCode\GestDepLib.Entities\Lane.cs" />
+  <Message Timestamp="2017-10-17T20:42:08" Importance="Medium" Text="'GestDepModel::GestDepLib.Entities::User' -  (Class): correcto (archivo reemplazado) - D:\Git\UPV\practiquesisw\GestDepModelLib\GeneratedCode\GestDepLib.Entities\User.cs" />
+  <Message Timestamp="2017-10-17T20:42:09" Importance="Medium" Text="'GestDepModel::GestDepLib.Entities::Monitor' -  (Class): correcto (archivo reemplazado) - D:\Git\UPV\practiquesisw\GestDepModelLib\GeneratedCode\GestDepLib.Entities\Monitor.cs" />
+  <Message Timestamp="2017-10-17T20:42:09" Importance="Medium" Text="'GestDepModel::GestDepLib.Entities::Course' -  (Class): correcto (archivo reemplazado) - D:\Git\UPV\practiquesisw\GestDepModelLib\GeneratedCode\GestDepLib.Entities\Course.cs" />
+  <Message Timestamp="2017-10-17T20:42:09" Importance="Diagnostic" Text="Nombre = EnumTemplate" />
+  <Message Timestamp="2017-10-17T20:42:09" Importance="Diagnostic" Text="Sobrescribir = True" />
+  <Message Timestamp="2017-10-17T20:42:09" Importance="Diagnostic" Text="ProjectPath = ..\GestDepModelLib\GestDepModelLib.csproj" />
+  <Message Timestamp="2017-10-17T20:42:09" Importance="Diagnostic" Text="TargetDirectory = GeneratedCode\{PackageStructure}" />
+  <Message Timestamp="2017-10-17T20:42:09" Importance="Diagnostic" Text="TargetName = {Name}" />
+  <Message Timestamp="2017-10-17T20:42:09" Importance="Diagnostic" Text="TemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\EnumTemplate.t4" />
+  <Message Timestamp="2017-10-17T20:42:09" Importance="Diagnostic" Text="ResolvedTemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\EnumTemplate.t4" />
+  <Message Timestamp="2017-10-17T20:42:09" Importance="Medium" Text="Enlace de plantilla de texto de GestDepModel: 'EnumTemplate' aplicará EnumTemplate.t4 a: 'GestDepModel::GestDepLib.Entities::Days' -  (Enumeration) " />
+  <Message Timestamp="2017-10-17T20:42:09" Importance="Medium" Text="'GestDepModel::GestDepLib.Entities::Days' -  (Enumeration): correcto (archivo reemplazado) - D:\Git\UPV\practiquesisw\GestDepModelLib\GeneratedCode\GestDepLib.Entities\Days.cs" />
+  <Message Timestamp="2017-10-17T20:42:09" Importance="Diagnostic" Text="Nombre = StructTemplate" />
+  <Message Timestamp="2017-10-17T20:42:09" Importance="Diagnostic" Text="Sobrescribir = True" />
+  <Message Timestamp="2017-10-17T20:42:09" Importance="Diagnostic" Text="ProjectPath = ..\GestDepModelLib\GestDepModelLib.csproj" />
+  <Message Timestamp="2017-10-17T20:42:09" Importance="Diagnostic" Text="TargetDirectory = GeneratedCode\{PackageStructure}" />
+  <Message Timestamp="2017-10-17T20:42:09" Importance="Diagnostic" Text="TargetName = {Name}" />
+  <Message Timestamp="2017-10-17T20:42:09" Importance="Diagnostic" Text="TemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4" />
+  <Message Timestamp="2017-10-17T20:42:09" Importance="Diagnostic" Text="ResolvedTemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4" />
+  <Message Timestamp="2017-10-17T20:42:09" Importance="Medium" Text="Enlace de plantilla de texto de GestDepModel: 'StructTemplate' aplicará StructTemplate.t4 a: 'GestDepModel::GestDepLib.Entities::Person' -  (Class), 'GestDepModel::GestDepLib.Entities::Payment' -  (Class), 'GestDepModel::GestDepLib.Entities::Pool' -  (Class), 'GestDepModel::GestDepLib.Entities::Enrollment' -  (Class), 'GestDepModel::GestDepLib.Entities::Lane' -  (Class), 'GestDepModel::GestDepLib.Entities::User' -  (Class), 'GestDepModel::GestDepLib.Entities::Monitor' -  (Class), 'GestDepModel::GestDepLib.Entities::Course' -  (Class) " />
+  <Message Timestamp="2017-10-17T20:42:09" Importance="Diagnostic" Text="'GestDepModel::GestDepLib.Entities::Person' -  (Class): no se generó ningún archivo porque el método 'AppliesToElement' de la plantilla 'StructTemplate.t4' se evaluó como false." />
+  <Message Timestamp="2017-10-17T20:42:09" Importance="Diagnostic" Text="'GestDepModel::GestDepLib.Entities::Payment' -  (Class): no se generó ningún archivo porque el método 'AppliesToElement' de la plantilla 'StructTemplate.t4' se evaluó como false." />
+  <Message Timestamp="2017-10-17T20:42:09" Importance="Diagnostic" Text="'GestDepModel::GestDepLib.Entities::Pool' -  (Class): no se generó ningún archivo porque el método 'AppliesToElement' de la plantilla 'StructTemplate.t4' se evaluó como false." />
+  <Message Timestamp="2017-10-17T20:42:09" Importance="Diagnostic" Text="'GestDepModel::GestDepLib.Entities::Enrollment' -  (Class): no se generó ningún archivo porque el método 'AppliesToElement' de la plantilla 'StructTemplate.t4' se evaluó como false." />
+  <Message Timestamp="2017-10-17T20:42:10" Importance="Diagnostic" Text="'GestDepModel::GestDepLib.Entities::Lane' -  (Class): no se generó ningún archivo porque el método 'AppliesToElement' de la plantilla 'StructTemplate.t4' se evaluó como false." />
+  <Message Timestamp="2017-10-17T20:42:10" Importance="Diagnostic" Text="'GestDepModel::GestDepLib.Entities::User' -  (Class): no se generó ningún archivo porque el método 'AppliesToElement' de la plantilla 'StructTemplate.t4' se evaluó como false." />
+  <Message Timestamp="2017-10-17T20:42:10" Importance="Diagnostic" Text="'GestDepModel::GestDepLib.Entities::Monitor' -  (Class): no se generó ningún archivo porque el método 'AppliesToElement' de la plantilla 'StructTemplate.t4' se evaluó como false." />
+  <Message Timestamp="2017-10-17T20:42:10" Importance="Diagnostic" Text="'GestDepModel::GestDepLib.Entities::Course' -  (Class): no se generó ningún archivo porque el método 'AppliesToElement' de la plantilla 'StructTemplate.t4' se evaluó como false." />
+  <Message Timestamp="2017-10-17T20:42:10" Importance="Diagnostic" Text="La selección incluía 3 elementos que no estaban enlazados a una plantilla." />
+  <Message Timestamp="2017-10-17T20:42:10" Importance="Diagnostic" Text="'GestDepModel::GestDepLib.Entities' -  (Package): sin plantilla enlazada." />
+  <Message Timestamp="2017-10-17T20:42:10" Importance="Diagnostic" Text="'c57ddc94-a35b-49d8-87af-90241b77a02b' -  (Comment): sin plantilla enlazada." />
+  <Message Timestamp="2017-10-17T20:42:10" Importance="Diagnostic" Text="'438654a0-3a6d-4dfe-a58d-7eb65c6183e1' -  (Comment): sin plantilla enlazada." />
+  <Message Timestamp="2017-10-17T20:42:10" Importance="High" Text="Generación de código completa. Errores: 0. Advertencias: 0." />
+</Log>

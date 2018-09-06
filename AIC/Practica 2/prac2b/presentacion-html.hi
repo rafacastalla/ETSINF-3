@@ -1,0 +1,730 @@
+/*** Begin prototypes ***/
+
+#ifdef presentacion-html_C
+
+/***************************************************************
+ *
+ * Func: imprime_intro
+ *
+ * Desc: Imprime la intro HTML
+ *
+ **************************************************************/
+
+static void imprime_intro 
+	(
+	 char* titulo
+	);
+
+/***************************************************************
+ *
+ * Func: imprime_w3css
+ *
+ * Desc: Imprime la intro HTML incluyendo el archivo css
+ *
+ **************************************************************/
+
+static void imprime_w3css 
+	(
+	 char* titulo
+	);
+
+/***************************************************************
+ *
+ * Func: imprime_footer
+ *
+ * Desc: Imprime el final HTML
+ *
+ **************************************************************/
+
+static void imprime_footer ( );
+
+/***************************************************************
+ *
+ * Func: imprime_footer_css
+ *
+ * Desc: Imprime el final HTML con css
+ *
+ **************************************************************/
+
+static void imprime_footer_css ( );
+
+/***************************************************************
+ *
+ * Func: imprime_nav1
+ *
+ * Desc: Imprime la barra de navegación
+ *
+ **************************************************************/
+
+static void imprime_nav1 ( );
+
+/***************************************************************
+ *
+ * Func: imprime_nav2
+ *
+ * Desc: Imprime la barra de navegación con estado ciclo a ciclo
+ *
+ **************************************************************/
+
+static void imprime_nav2 
+	(
+	 char* archivo
+	);
+
+/***************************************************************
+ *
+ * Func: imprime_nav1_css
+ *
+ * Desc: Imprime la barra de navegación, utilizando CSS
+ *
+ **************************************************************/
+
+static void imprime_nav1_css ( );
+
+/***************************************************************
+ *
+ * Func: imprime_nav2_css
+ *
+ * Desc: Imprime la barra de navegación con estado ciclo a ciclo, utilizando CSS
+ *
+ **************************************************************/
+
+static void imprime_nav2_css 
+	(
+	 char* archivo
+	);
+
+/***************************************************************
+ *
+ * Func: imprime_conf
+ *
+ * Desc: Imprime la configuración
+ *
+ **************************************************************/
+
+static void imprime_conf ( );
+
+/***************************************************************
+ *
+ * Func: desplazamiento_horizontal
+ *
+ * Description: 
+ *   Desplaza la zona visible un ciclo hacia la izquierda
+ *
+ **************************************************************/
+
+static void desplazamiento_horizontal ( );
+
+/***************************************************************
+ *
+ * Func: desplazamiento_vertical
+ *
+ * Description: 
+ *   Desplaza la zona visible un ciclo hacia la izquierda
+ *
+ **************************************************************/
+
+static void desplazamiento_vertical ( );
+
+/***************************************************************
+ *
+ * Func: color_instruccion
+ *
+ * Desc: Devuelve un color
+ *
+ **************************************************************/
+
+static void color_instruccion 
+	(
+	 char * color,
+	 word PC
+	);
+
+/***************************************************************
+ *
+ * Func: muestra_senyal
+ *
+ * Description:
+ *   Imprime el nombre de la señal, si está activada
+ *
+ **************************************************************/
+
+static void muestra_senyal 
+	(
+	 boolean senyal,
+	 char nombre[128]
+	);
+
+/***************************************************************
+ *
+ * Func: muestra_fase
+ *
+ * Description:
+ *   Muestra la fase de cada instruccion en el cronograma
+ *
+ **************************************************************/
+
+static void muestra_fase 
+	(
+	 char * fase,
+	 ciclo_t orden
+	);
+
+/***************************************************************
+ *
+ * Func: imprime_int_regs
+ *
+ * Desc: Imprime el estado de los registros enteros
+ *
+ **************************************************************/
+
+static void imprime_int_regs ( );
+
+/***************************************************************
+ *
+ * Func: imprime_int_regs_col
+ *
+ * Desc: Imprime el estado de los registros enteros en una columna
+ *
+ **************************************************************/
+
+static void imprime_int_regs_col ( );
+
+/***************************************************************
+ *
+ * Func: imprime_mem
+ *
+ * Desc: Imprime el estado de la memoria de datos 
+ *
+ **************************************************************/
+
+static void imprime_Dmem ( );
+
+/***************************************************************
+ *
+ * Func: imprime_mem_col
+ *
+ * Desc: Imprime el estado de la memoria de datos en una columna
+ *
+ **************************************************************/
+
+static void imprime_Dmem_col ( );
+
+/***************************************************************
+ *
+ * Func: imprime_Imem_col
+ *
+ * Desc: Imprime el estado de la memoria de instrucciones en una columna
+ *
+ **************************************************************/
+
+static void imprime_Imem_col ( );
+
+/***************************************************************
+ *
+ * Func: imprime_etapas
+ *
+ * Desc: Imprime las etapas del procesador
+ *
+ **************************************************************/
+
+static void imprime_etapas ( );
+
+/***************************************************************
+ *
+ * Func: imprime_senyales
+ *
+ * Desc: Imprime las señales activas del procesador
+ *
+ **************************************************************/
+
+static void imprime_senyales ( );
+
+/***************************************************************
+ *
+ * Func: imprime_dit
+ *
+ * Desc: Imprime el diagrama instrucciones - tiempo 
+ *
+ **************************************************************/
+
+static void imprime_dit 
+	(
+	 int num_instrucciones,
+	 char* archivo
+	);
+
+/***************************************************************
+ *
+ * Func: asigna
+ *
+ * Desc: Asigna un valor a un punto
+ *
+ **************************************************************/
+
+static void asigna 
+	(
+	 coord_t* punto,
+	 int x,
+	 int y
+	);
+
+/***************************************************************
+ *
+ * Func: escribe
+ *
+ * Desc: Escribe un texto en el dibujo
+ *
+ **************************************************************/
+
+static void escribe 
+	(
+	 int x,
+	 int y,
+	 char* texto,
+	 char* tcolor,
+	 int tsize
+	);
+
+/***************************************************************
+ *
+ * Func: genera_alu
+ *
+ * Desc: Dibuja el símbolo de la ALU
+ *
+ **************************************************************/
+
+static void genera_alu 
+	(
+	 elem_2i1o_t* alu,
+	 int x1,
+	 int y1,
+	 int ancho,
+	 int alto,
+	 char* nombre,
+	 char* color,
+	 char* relleno
+	);
+
+/***************************************************************
+ *
+ * Func: genera_mem
+ *
+ * Desc: Dibuja el símbolo de la memoria
+ *
+ **************************************************************/
+
+static void genera_mem 
+	(
+	 elem_2i1o_t* mem,
+	 int x1,
+	 int y1,
+	 int ancho,
+	 int alto,
+	 char* nombre,
+	 char* in1,
+	 char* in2,
+	 char* out1,
+	 char* color,
+	 char* relleno
+	);
+
+/***************************************************************
+ *
+ * Func: genera_elipse
+ *
+ * Desc: Dibuja una elipse
+ *
+ **************************************************************/
+
+static void genera_elipse 
+	(
+	 elem_1i1o_t* mem,
+	 int x1,
+	 int y1,
+	 int ancho,
+	 int alto,
+	 char* nombre,
+	 char* in1,
+	 char* out1,
+	 char* tcolor,
+	 char* color,
+	 char* relleno
+	);
+
+/***************************************************************
+ *
+ * Func: genera_latch
+ *
+ * Desc: Dibuja un registro de 1 entrada
+ *
+ **************************************************************/
+
+static void genera_latch 
+	(
+	 elem_1i1o_t* reg,
+	 int x1,
+	 int y1,
+	 int ancho,
+	 int alto,
+	 char* nombre,
+	 char* in1,
+	 char* tcolor,
+	 char* color,
+	 char * relleno
+	);
+
+/***************************************************************
+ *
+ * Func: genera_latch6
+ *
+ * Desc: Dibuja un registro de 6 entradas y 6 salidas
+ *
+ **************************************************************/
+
+static void genera_latch6 
+	(
+	 elem_6i6o_t* reg,
+	 int x1,
+	 int y1,
+	 int ancho,
+	 int alto,
+	 int i1_y,
+	 int i2_y,
+	 int i3_y,
+	 int i4_y,
+	 int i5_y,
+	 int i6_y,
+	 char* nombre,
+	 char* in1,
+	 char* in2,
+	 char* in3,
+	 char* in4,
+	 char* in5,
+	 char* in6,
+	 char* tcolor,
+	 char* color,
+	 char * relleno
+	);
+
+/***************************************************************
+ *
+ * Func: genera_regs
+ *
+ * Desc: Dibuja un banco de registros
+ *
+ **************************************************************/
+
+static void genera_regs 
+	(
+	 elem_4i2o_t* regs,
+	 int x1,
+	 int y1,
+	 int ancho,
+	 int alto,
+	 int in1,
+	 char* in1_col,
+	 int in2,
+	 char* in2_col,
+	 int in3,
+	 char* in3_col,
+	 char* color,
+	 char* relleno
+	);
+
+/***************************************************************
+ *
+ * Func: genera_mux2
+ *
+ * Desc: Dibuja un multiplexor de 2 entradas. 
+ * Fijamos la posición de la salida
+ * El in3 es el de contro
+ *
+ **************************************************************/
+
+static void genera_mux2 
+	(
+	 elem_3i1o_t* mux,
+	 int xi,
+	 int yo,
+	 int ancho,
+	 int alto,
+	 int selected,
+	 char* scolor,
+	 char* color,
+	 char* relleno
+	);
+
+/***************************************************************
+ *
+ * Func: genera_mux4
+ *
+ * Desc: Dibuja un multiplexor de 4 entradas // in5 es la de control
+ *
+ **************************************************************/
+
+static void genera_mux4 
+	(
+	 elem_5i1o_t* mux,
+	 int xi,
+	 int yo,
+	 int ancho,
+	 int alto,
+	 int selected,
+	 char* scolor,
+	 char* color,
+	 char* relleno
+	);
+
+/***************************************************************
+ *
+ * Func: conecta
+ *
+ * Desc: Dibuja la conexión entre dos puntos
+ *
+ **************************************************************/
+
+static void conecta 
+	(
+	 coord_t punto1,
+	 coord_t punto2,
+	 char* color
+	);
+
+/***************************************************************
+ *
+ * Func: conecta_p
+ *
+ * Desc: Dibuja la conexi�n entre dos puntos
+ *
+ **************************************************************/
+
+static void conecta_p 
+	(
+	 coord_t punto1,
+	 coord_t punto2,
+	 int percent,
+	 char* color
+	);
+
+/***************************************************************
+ *
+ * Func: conecta_int
+ *
+ * Desc: Dibuja la conexi�n entre dos puntos
+ *
+ **************************************************************/
+
+static void conecta_int 
+	(
+	 coord_t punto1,
+	 coord_t punto2,
+	 int desp_xmedio,
+	 char* color
+	);
+
+/***************************************************************
+ *
+ * Func: conecta_p1_dx1_dy_dx2_p2
+ *
+ * Desc: Dibuja la conexi�n entre dos puntos p1 y p2: p1 -> rel_x, rel_y, rel_x -> p2
+ *
+ **************************************************************/
+
+static void conecta_p1_dx1_dy_dx2_p2 
+	(
+	 coord_t punto1,
+	 coord_t punto2,
+	 int desp_xmedio1,
+	 int desp_ymedio,
+	 int desp_xmedio2,
+	 char* color
+	);
+
+/***************************************************************
+ *
+ * Func: conecta_p1_dx1_y_dx2_p2
+ *
+ * Desc: Dibuja la conexi�n entre dos puntos p1 y p2: p1 -> rel_x, abs_y, rel_x -> p2
+ *
+ **************************************************************/
+
+static void conecta_p1_dx1_y_dx2_p2 
+	(
+	 coord_t punto1,
+	 coord_t punto2,
+	 int desp_xmedio1,
+	 int y_medio1,
+	 int desp_xmedio2,
+	 char* color
+	);
+
+/***************************************************************
+ *
+ * Func: conecta_x
+ *
+ * Desc: Dibuja la conexi�n entre dos puntos p1 y p2 moviendo en x
+ *
+ **************************************************************/
+
+static void conecta_x 
+	(
+	 coord_t punto1,
+	 coord_t punto2,
+	 char* color
+	);
+
+/***************************************************************
+ *
+ * Func: conecta_y
+ *
+ * Desc: Dibuja la conexi�n entre dos puntos p1 y p2, moviendo en y
+ *
+ **************************************************************/
+
+static void conecta_y 
+	(
+	 coord_t punto1,
+	 coord_t punto2,
+	 char* color
+	);
+
+/***************************************************************
+ *
+ * Func: dibuja_datapath
+ *
+ * Desc: Dibuja el datapath. Necesita que este abierto f_salida
+ *
+ **************************************************************/
+
+static void dibuja_datapath ( );
+
+#endif
+
+/***************************************************************
+ *
+ * Func: imprime_instruccion
+ *
+ * Parametros:
+ *	instruc  (char *) ;
+ *
+ * Descripcipn:
+ *   Imprime la intrucción localizada en el PC sobre la
+ *   cadena de caracteres 'instruc'
+ *
+ **************************************************************/
+
+void imprime_instruccion 
+	(
+	 char * instruc,
+	 word PC
+	);
+
+/***************************************************************
+ *
+ * Func: init_instruc
+ *
+ * Description: 
+ *   Inicializa una instrucci�n en el cronograma
+ *
+ **************************************************************/
+
+void init_instruc 
+	(
+	 word PC,
+	 ciclo_t orden
+	);
+
+/***************************************************************
+ *
+ * Func: actualiza_crono
+ *
+ * Description: 
+ *   Actualiza el cronograma con el estado de las fases
+ *
+ **************************************************************/
+
+void actualiza_crono ( );
+
+/***************************************************************
+ *
+ * Func: imprime_estado
+ *
+ * Desc: Imprime el estado del procesador
+ *
+ **************************************************************/
+
+void imprime_estado ( );
+
+/***************************************************************
+ *
+ * Func: imprime_estado_datapath 
+ *
+ * Desc: Imprime el estado de las estructuras de coma flotante
+ *
+ **************************************************************/
+
+void imprime_estado_datapath ( );
+
+/***************************************************************
+ *
+ * Func: imprime_crono
+ *
+ * Desc: Imprime el cronograma de ejecuci�n
+ *
+ **************************************************************/
+
+void imprime_crono ( );
+
+/***************************************************************
+ *
+ * Func: imprime_css
+ *
+ * Desc: Imprime todo 
+ *
+ **************************************************************/
+
+void imprime_css ( );
+
+/***************************************************************
+ *
+ * Func: imprime_inicio
+ *
+ * Desc: Imprime la configuracion
+ *
+ **************************************************************/
+
+void imprime_inicio ( );
+
+/***************************************************************
+ *
+ * Func: imprime_inicio
+ *
+ * Desc: Imprime la configuracion
+ *
+ **************************************************************/
+
+void imprime_inicio_css ( );
+
+/***************************************************************
+ *
+ * Func: imprime_final
+ *
+ * Desc: Imprime la configuracion y resultados finales
+ *
+ **************************************************************/
+
+void imprime_final ( );
+
+/***************************************************************
+ *
+ * Func: imprime_final
+ *
+ * Desc: Imprime la configuracion y resultados finales
+ *
+ **************************************************************/
+
+void imprime_final_css ( );
+
+
+/*** End prototypes ***/

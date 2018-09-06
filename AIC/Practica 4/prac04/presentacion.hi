@@ -1,0 +1,253 @@
+/*** Begin prototypes ***/
+
+/***************************************************************
+ *
+ * Func: crea_firma
+ *
+ * Description: 
+ *   Crea un fichero de firmas
+ *
+ **************************************************************/
+
+void crea_firma 
+	(
+	 char * fichero
+	);
+
+/***************************************************************
+ *
+ * Func: abre_firma
+ *
+ * Description: 
+ *   Abre un fichero de firmas ya existente
+ *
+ **************************************************************/
+
+void abre_firma 
+	(
+	 char * fichero
+	);
+
+/***************************************************************
+ *
+ * Func: nueva_firma
+ *
+ * Description: 
+ *   Comienza la firma de un nuevo ciclo
+ *
+ **************************************************************/
+
+void nueva_firma ( );
+
+/***************************************************************
+ *
+ * Func: procesa_firma
+ *
+ * Description: 
+ *   MF_ESCRITURA: Añade un trozo de la firma correspondiente al ciclo actual.
+ *   MF_LECTURA: Comprueba si uno de los campos de la firma es correcto.
+ *
+ *   En cualquier caso devuelve la cadena que se debe insertar 
+ *   como valor.
+ *
+ **************************************************************/
+
+char * procesa_firma 
+	(
+	 char * campo,
+	 char * valor
+	);
+
+/***************************************************************
+ *
+ * Func: cierra_firma
+ *
+ * Description: 
+ *   Cierra el fichero de firmas
+ *
+ **************************************************************/
+
+void cierra_firma ( );
+
+#ifdef presentacion_C
+
+/***************************************************************
+ *
+ * Func: imprime_instruccion
+ *
+ * Parametros:
+ *	instruc  (char *) ; 
+ *
+ * Descripción: 
+ *   Imprime la intrucción localizada en el PC sobre la
+ *   cadena de caracteres 'instruc'
+ *
+ **************************************************************/
+
+static void imprime_instruccion 
+	(
+	 char * instruc,
+	 word PC
+	);
+
+/***************************************************************
+ *
+ * Func: imprime_codigo
+ *
+ * Description: 
+ *   Obtiene el nombre de una estación de reserva
+ *
+ **************************************************************/
+
+static void imprime_codigo 
+	(
+	 marca_t s,
+	 char * nom
+	);
+
+/***************************************************************
+ *
+ * Func: imprime_operacion
+ *
+ * Description: 
+ *   Obtiene el nombre de una estación de reserva
+ *
+ **************************************************************/
+
+static void imprime_operacion 
+	(
+	 codop_t c,
+	 char * nom
+	);
+
+/***************************************************************
+ *
+ * Func: imprime_estado_predictor
+ *
+ * Description: 
+ *   Obtiene el nombre de una estación de reserva
+ *
+ **************************************************************/
+
+static void imprime_estado_predictor 
+	(
+	 char * nom,
+	 estado_predic_t e
+	);
+
+/***************************************************************
+ *
+ * Func: desplazamiento_horizontal
+ *
+ * Description: 
+ *   Desplaza la zona visible un ciclo hacia la izquierda
+ *
+ **************************************************************/
+
+static void desplazamiento_horizontal ( );
+
+/***************************************************************
+ *
+ * Func: desplazamiento_vertical
+ *
+ * Description: 
+ *   Desplaza la zona visible un ciclo hacia la izquierda
+ *
+ **************************************************************/
+
+static void desplazamiento_vertical ( );
+
+#endif
+
+/***************************************************************
+ *
+ * Func: init_instruc
+ *
+ * Description: 
+ *   Inicializa una instrucción en el cronograma
+ *
+ **************************************************************/
+
+void init_instruc 
+	(
+	 word PC,
+	 ciclo_t orden
+	);
+
+/***************************************************************
+ *
+ * Func: muestra_fase
+ *
+ * Description: 
+ *   Muestra la fase de cada instrucción en el cronograma
+ *
+ **************************************************************/
+
+void muestra_fase 
+	(
+	 char * fase,
+	 ciclo_t orden
+	);
+
+/***************************************************************
+ *
+ * Func: imprime_inicio
+ *
+ * Desc: Imprime el cronograma de ejecución
+ *
+ **************************************************************/
+
+void imprime_inicio ( );
+
+/***************************************************************
+ *
+ * Func: imprime_final
+ *
+ * Desc: Imprime el cronograma de ejecución
+ *
+ **************************************************************/
+
+void imprime_final ( );
+
+/***************************************************************
+ *
+ * Func: imprime_estado
+ *
+ * Desc: Imprime el estado de las estructuras de coma flotante
+ *
+ **************************************************************/
+
+void imprime_estado ( );
+
+/***************************************************************
+ *
+ * Func: imprime_crono
+ *
+ * Desc: Imprime el cronograma de ejecución
+ *
+ **************************************************************/
+
+void imprime_crono ( );
+
+/***************************************************************
+ *
+ * Func: imprime_predictor
+ *
+ * Desc: Imprime el estado del predictor
+ *
+ **************************************************************/
+
+void imprime_predictor ( );
+
+/***************************************************************
+ *
+ * Func: imprime_estadisticas
+ *
+ * Desc: Imprime las estadisticas del programa
+ *
+ **************************************************************/
+
+void imprime_estadisticas ( );
+
+
+/*** End prototypes ***/

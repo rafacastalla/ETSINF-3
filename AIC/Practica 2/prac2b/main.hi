@@ -1,0 +1,53 @@
+/*** Begin prototypes ***/
+
+#ifdef main_C
+
+/***************************************************************
+ *
+ * Func: inicializa_mips
+ *
+ * Desc: Inicializa las estructuras del mips
+ *
+ **************************************************************/
+
+static void inicializa_mips ( );
+
+/***************************************************************
+ *
+ * Func: ejecutar_codigo
+ *
+ *
+ * Retorna:  RC  (int) 
+ *
+ * Descripción: 
+ *   Ejecuta el bucle principal del computador
+ *
+ **************************************************************/
+
+static int ejecutar_codigo ( );
+
+#endif
+
+/***************************************************************
+ *
+ * Func: main
+ *
+ * Parametros:
+ *	argc  (int) ; Número de parametros en linea
+ *	argv[]  (char*) ; Texto de los parametros en linea
+ *
+ * Retorna:  RC  (int) 
+ *
+ * Descripción: 
+ *   Función principal
+ *
+ **************************************************************/
+
+int main 
+	(
+	 int argc,
+	 char* argv[]
+	);
+
+
+/*** End prototypes ***/

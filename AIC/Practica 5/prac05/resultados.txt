@@ -1,0 +1,255 @@
+
+Ejercicio 1
+===========
+
+*** CONFIGURACIÓN ***
+
+  Grado superescalar: 
+        ISSUE:        1
+        BUSES:        1
+        COMMIT:       1
+  Reorder Buffer:     20
+  E.R. Suma/Resta:    3
+  E.R. Mult/Div:      2
+  E.R. Enteros:       5
+  Buffer lectura:     3
+  Buffer escritura:   3
+  Buffer predictor:   2
+  Registros:          8
+
+                    Cantidad   Latencia  Tipo
+                    --------   --------  ----
+  Oper. Suma/Resta:    1           4     CONV
+  Oper. Mult/Div:      1           7     CONV
+  Oper. Enteros:       1           1     CONV
+  Oper. Memoria:       1           2     CONV
+
+Ciclo 53: El programa está terminando normalmente
+
+
+ejemplo:
+--------
+*** ESTADISTICAS ***
+
+Ciclos:                53
+Instrucciones:         18
+  Operaciones C.F.:     7
+  Saltos:
+    Accedidos:          3
+    Encontrados:        2
+    Ejecutados:         2
+    Acertados:          0
+
+daxpy:
+------
+*** ESTADISTICAS ***
+
+Ciclos:                70
+Instrucciones:         36
+  Operaciones C.F.:     7
+  Saltos:
+    Accedidos:          4
+    Encontrados:        3
+    Ejecutados:         3
+    Acertados:          1
+
+Parametros por defecto:
+------------------------
+
+*** ESTADISTICAS ***
+
+Ciclos:               681
+Instrucciones:        646
+  Operaciones C.F.:   129
+  Saltos:
+    Accedidos:         65
+    Encontrados:       64
+    Ejecutados:        64
+    Acertados:         62
+
+Parametros por defecto, sin predictor de saltos:
+------------------------------------------------
+
+*** ESTADISTICAS ***
+
+Ciclos:              1671
+Instrucciones:        646
+  Operaciones C.F.:   128
+  Saltos:
+    Accedidos:         64
+    Encontrados:        0
+    Ejecutados:        64
+    Acertados:          1
+
+Procesador superescalar de 2 vias:
+----------------------------------
+
+*** ESTADISTICAS ***
+
+Ciclos:               527
+Instrucciones:        646
+  Operaciones C.F.:   129
+  Saltos:
+    Accedidos:         67
+    Encontrados:       66
+    Ejecutados:        64
+    Acertados:         62
+
+Procesador superescalar de 2 vias, ROB=32 entradas:
+---------------------------------------------------
+
+*** ESTADISTICAS ***
+
+Ciclos:               487
+Instrucciones:        646
+  Operaciones C.F.:   129
+  Saltos:
+    Accedidos:         67
+    Encontrados:       66
+    Ejecutados:        64
+    Acertados:         62
+
+Procesador superescalar de 4 vias, ROB=32 entradas:
+----------------------------------------------------
+
+*** ESTADISTICAS ***
+
+Ciclos:               482
+Instrucciones:        646
+  Operaciones C.F.:   129
+  Saltos:
+    Accedidos:        160
+    Encontrados:      159
+    Ejecutados:        64
+    Acertados:         62
+
+Procesador superescalar de 4 vias, ROB=32 entradas, multiplicador segmentado:
+-------------------------------------------------------------------------------
+
+*** ESTADISTICAS ***
+
+Ciclos:               433
+Instrucciones:        646
+  Operaciones C.F.:   129
+  Saltos:
+    Accedidos:        176
+    Encontrados:      175
+    Ejecutados:        64
+    Acertados:         62
+
+Procesador superescalar de 4 vias, ROB=32 entradas, multiplicador segmentado,dos operadores de carga/almacenamiento:
+----------------------------------------------------------------------------------------------------------------------
+
+*** ESTADISTICAS ***
+
+Ciclos:               416
+Instrucciones:        646
+  Operaciones C.F.:   129
+  Saltos:
+    Accedidos:        189
+    Encontrados:      188
+    Ejecutados:        64
+    Acertados:         62
+
+Procesador superescalar de 4 vias, ROB=64 entradas, multiplicador segmentado(4 ER), dos operadores de carga/almacenamiento (4 buffers):
+------------------------------------------------------------------------------------------------------------------------------------------
+
+*** ESTADISTICAS ***
+
+Ciclos:               356
+Instrucciones:        646
+  Operaciones C.F.:   129
+  Saltos:
+    Accedidos:        131
+    Encontrados:      130
+    Ejecutados:        64
+    Acertados:         62
+
+Ejercicio 4
+============
+
+A)
+
+ordena.s
+--------
+*** ESTADISTICAS ***
+
+Ciclos:               270
+Instrucciones:        114
+  Operaciones C.F.:    12
+  Saltos:
+    Accedidos:         47
+    Encontrados:       33
+    Ejecutados:        28
+    Acertados:         14
+
+ordena_largo.s
+--------------
+*** ESTADISTICAS ***
+
+Ciclos:              2017
+Instrucciones:       1050
+  Operaciones C.F.:   132
+  Saltos:
+    Accedidos:        399
+    Encontrados:      352
+    Ejecutados:       276
+    Acertados:        205
+
+B)
+
+ordena.s
+--------
+*** ESTADISTICAS ***
+
+Ciclos:               264
+Instrucciones:        114
+  Operaciones C.F.:    12
+  Saltos:
+    Accedidos:         47
+    Encontrados:       43
+    Ejecutados:        28
+    Acertados:         15
+
+ordena_largo.s
+--------------
+*** ESTADISTICAS ***
+
+Ciclos:              1930
+Instrucciones:       1050
+  Operaciones C.F.:   132
+  Saltos:
+    Accedidos:        401
+    Encontrados:      397
+    Ejecutados:       276
+    Acertados:        219
+
+C)
+
+ordena.s
+--------
+*** ESTADISTICAS ***
+
+Ciclos:               241
+Instrucciones:        114
+  Operaciones C.F.:    12
+  Saltos:
+    Accedidos:         40
+    Encontrados:       36
+    Ejecutados:        28
+    Acertados:         18
+
+ordena_largo.s
+--------------
+
+*** ESTADISTICAS ***
+
+Ciclos:              1786
+Instrucciones:       1050
+  Operaciones C.F.:   132
+  Saltos:
+    Accedidos:        375
+    Encontrados:      371
+    Ejecutados:       276
+    Acertados:        232
+

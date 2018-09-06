@@ -1,0 +1,290 @@
+/*** Begin prototypes ***/
+
+/***************************************************************
+ *
+ * Func: pasar_a_ID_NOP
+ *
+ * Desc: La fase IF entrega un NOP a la fase ID al próximo ciclo
+ *
+ **************************************************************/
+
+void pasar_a_ID_NOP ( );
+
+/***************************************************************
+ *
+ * Func: pasar_a_EX_NOP
+ *
+ * Desc: La fase ID entrega un NOP a la fase EX al próximo ciclo
+ *
+ **************************************************************/
+
+void pasar_a_EX_NOP ( );
+
+/***************************************************************
+ *
+ * Func: pasar_a_MEM_NOP
+ *
+ * Desc: La fase EX entrega un NOP a la fase MEM al próximo ciclo
+ *
+ **************************************************************/
+
+void pasar_a_MEM_NOP ( );
+
+/***************************************************************
+ *
+ * Func: hay_fuente1_ID
+ *
+ * Desc: Indica si en la fase ID hay una instrucción que
+ *       tiene Rfte1
+ *
+ **************************************************************/
+
+boolean hay_fuente1_ID ( );
+
+/***************************************************************
+ *
+ * Func: hay_fuente2_ID
+ *
+ * Desc: Indica si en la fase ID hay una instrucción que
+ *       tiene Rfte2
+ *
+ **************************************************************/
+
+boolean hay_fuente2_ID ( );
+
+/***************************************************************
+ *
+ * Func: hay_fuente1_EX
+ *
+ * Desc: Indica si en la fase EX hay una instrucción que
+ *       tiene Rfte1
+ *
+ **************************************************************/
+
+boolean hay_fuente1_EX ( );
+
+/***************************************************************
+ *
+ * Func: hay_fuente2_EX
+ *
+ * Desc: Indica si en la fase EX hay una instrucción que
+ *       tiene Rfte2
+ *
+ **************************************************************/
+
+boolean hay_fuente2_EX ( );
+
+/***************************************************************
+ *
+ * Func: hay_destino_EX
+ *
+ * Desc: Indica si en la fase EX hay una instrucción que
+ *       tiene Rdst
+ *
+ **************************************************************/
+
+boolean hay_destino_EX ( );
+
+/***************************************************************
+ *
+ * Func: hay_destino_MEM
+ *
+ * Desc: Indica si en la fase MEM hay una instrucción que
+ *       tiene Rdst
+ *
+ **************************************************************/
+
+boolean hay_destino_MEM ( );
+
+/***************************************************************
+ *
+ * Func: hay_destino_WB
+ *
+ * Desc: Indica si en la fase WB hay una instrucción que
+ *       tiene Rdst
+ *
+ **************************************************************/
+
+boolean hay_destino_WB ( );
+
+/***************************************************************
+ *
+ * Func: operacion_ALU
+ *
+ * Desc: Realiza la operacion en el operador aritmético
+ *
+ **************************************************************/
+
+dword operacion_ALU 
+	(
+	 byte codop,
+	 dword in1,
+	 dword in2
+	);
+
+/***************************************************************
+ *
+ * Func: operacion_COMP
+ *
+ * Desc: Realiza la operacion en el comparador de la fase EX
+ *
+ **************************************************************/
+
+dword operacion_COMP 
+	(
+	 byte codop,
+	 dword in1
+	);
+
+/***************************************************************
+ *
+ * Func: mux_ALUsup
+ *
+ * Desc: Implementa el multiplexor superior de la ALU
+ *
+ **************************************************************/
+
+dword mux_ALUsup 
+	(
+	 dword npc,
+	 dword ra,
+	 dword mem,
+	 dword wb
+	);
+
+/***************************************************************
+ *
+ * Func: mux_ALUinf
+ *
+ * Desc: Implementa el multiplexor inferior de la ALU
+ *
+ **************************************************************/
+
+dword mux_ALUinf 
+	(
+	 dword rb,
+	 dword imm,
+	 dword mem,
+	 dword wb
+	);
+
+/***************************************************************
+ *
+ * Func: mux_COMP
+ *
+ * Desc: Implementa el multiplexor superior del COMP de la fase EX
+ *
+ **************************************************************/
+
+dword mux_COMP 
+	(
+	 dword ra,
+	 dword mem,
+	 dword wb
+	);
+
+/***************************************************************
+ *
+ * Func: mux_EXmem
+ *
+ * Desc: Implementa el multiplexor hacia memoria de la fase EX
+ *
+ **************************************************************/
+
+dword mux_EXmem 
+	(
+	 word rb,
+	 word wb
+	);
+
+/***************************************************************
+ *
+ * Func: mux_MEMmem
+ *
+ * Desc: Implementa el multiplexor hacia memoria de la fase MEM
+ *
+ **************************************************************/
+
+dword mux_MEMmem 
+	(
+	 dword rb,
+	 dword wb
+	);
+
+/***************************************************************
+ *
+ * Func: mux_COMPid
+ *
+ * Desc: Implementa el multiplexor del COMP de la fase ID
+ *
+ **************************************************************/
+
+dword mux_COMPid 
+	(
+	 dword ra,
+	 dword mem,
+	 dword wb
+	);
+
+/***************************************************************
+ *
+ * Func: fase_busqueda
+ *
+ * Desc: Implementa la fase IF
+ *
+ **************************************************************/
+
+void fase_busqueda ( );
+
+/***************************************************************
+ *
+ * Func: fase_decodificacion
+ *
+ * Desc: Implementa la fase ID
+ *
+ **************************************************************/
+
+int fase_decodificacion ( );
+
+/***************************************************************
+ *
+ * Func: fase_ejecucion
+ *
+ * Desc: Implementa la fase EX
+ *
+ **************************************************************/
+
+void fase_ejecucion ( );
+
+/***************************************************************
+ *
+ * Func: fase_memoria
+ *
+ * Desc: Implementa la fase MEM
+ *
+ **************************************************************/
+
+void fase_memoria ( );
+
+/***************************************************************
+ *
+ * Func: fase_escritura
+ *
+ * Desc: Implementa la fase 'WB' 
+ *
+ **************************************************************/
+
+boolean fase_escritura ( );
+
+/***************************************************************
+ *
+ * Func: impulso_reloj
+ *
+ * Desc: Actualiza los registros inter-etapa
+ *
+ **************************************************************/
+
+void impulso_reloj ( );
+
+
+/*** End prototypes ***/

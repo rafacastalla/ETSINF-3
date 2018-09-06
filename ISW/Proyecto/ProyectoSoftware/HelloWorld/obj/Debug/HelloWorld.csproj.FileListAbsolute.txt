@@ -1,0 +1,12 @@
+D:\TreballISW\practiquesisw\ProyectoSoftware\HelloWorld\bin\Debug\HelloWorld.exe.config
+D:\TreballISW\practiquesisw\ProyectoSoftware\HelloWorld\bin\Debug\HelloWorld.exe
+D:\TreballISW\practiquesisw\ProyectoSoftware\HelloWorld\bin\Debug\HelloWorld.pdb
+D:\TreballISW\practiquesisw\ProyectoSoftware\HelloWorld\obj\Debug\HelloWorld.csprojResolveAssemblyReference.cache
+D:\TreballISW\practiquesisw\ProyectoSoftware\HelloWorld\obj\Debug\HelloWorld.exe
+D:\TreballISW\practiquesisw\ProyectoSoftware\HelloWorld\obj\Debug\HelloWorld.pdb
+D:\treballISW\ProyectoSoftware\HelloWorld\bin\Debug\HelloWorld.exe.config
+D:\treballISW\ProyectoSoftware\HelloWorld\bin\Debug\HelloWorld.exe
+D:\treballISW\ProyectoSoftware\HelloWorld\bin\Debug\HelloWorld.pdb
+D:\treballISW\ProyectoSoftware\HelloWorld\obj\Debug\HelloWorld.csprojResolveAssemblyReference.cache
+D:\treballISW\ProyectoSoftware\HelloWorld\obj\Debug\HelloWorld.exe
+D:\treballISW\ProyectoSoftware\HelloWorld\obj\Debug\HelloWorld.pdb

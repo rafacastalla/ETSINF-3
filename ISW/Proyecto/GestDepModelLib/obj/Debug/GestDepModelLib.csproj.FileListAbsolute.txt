@@ -1,0 +1,10 @@
+D:\treballISW\GestDepModelLib\bin\Debug\GestDepModelLib.dll
+D:\treballISW\GestDepModelLib\bin\Debug\GestDepModelLib.pdb
+D:\treballISW\GestDepModelLib\obj\Debug\GestDepModelLib.csprojResolveAssemblyReference.cache
+D:\treballISW\GestDepModelLib\obj\Debug\GestDepModelLib.dll
+D:\treballISW\GestDepModelLib\obj\Debug\GestDepModelLib.pdb
+D:\Git\UPV\practiquesisw\GestDepModelLib\bin\Debug\GestDepModelLib.dll
+D:\Git\UPV\practiquesisw\GestDepModelLib\bin\Debug\GestDepModelLib.pdb
+D:\Git\UPV\practiquesisw\GestDepModelLib\obj\Debug\GestDepModelLib.csprojResolveAssemblyReference.cache
+D:\Git\UPV\practiquesisw\GestDepModelLib\obj\Debug\GestDepModelLib.dll
+D:\Git\UPV\practiquesisw\GestDepModelLib\obj\Debug\GestDepModelLib.pdb

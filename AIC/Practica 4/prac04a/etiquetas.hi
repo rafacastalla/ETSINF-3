@@ -1,0 +1,80 @@
+/*** Begin prototypes ***/
+
+/***************************************************************
+ *
+ * Func: te_inserta
+ *
+ * Descripción:
+ *   Inserta el valor de una etiqueta en la tabla de simbolos
+ *
+ **************************************************************/
+
+void te_inserta
+	(
+	 char *texto,
+	 dword direccion,
+	 modo_t tipo_memoria
+	);
+
+/***************************************************************
+ *
+ * Func: te_resuelve
+ *
+ * Descripción:
+ *   Resuelve el valor de las etiquetas o lo deja pendiente.
+ *
+ **************************************************************/
+
+word te_resuelve 
+	(
+	 char *texto,
+	 word linea,
+	 dword puntero,
+	 modo_t tipo_memoria
+	);
+
+/***************************************************************
+ *
+ * Func: te_confirma
+ *
+ * Descripción:
+ *   Mira si hay referencias sin resolver
+ *
+ **************************************************************/
+
+void te_confirma( );
+
+/***************************************************************
+ *
+ * Func: te_etiqueta
+ *
+ * Descripción:
+ *   Resuelve el nombre de la etiqueta a partir de la direccion
+ *
+ **************************************************************/
+
+void te_etiqueta
+	(
+	 char *texto,
+	 dword direccion,
+	 modo_t tipo_memoria
+	);
+
+/***************************************************************
+ *
+ * Func: te_busca
+ *
+ * Descripción:
+ *   Busca la etiqueta más cercana a la direccion.
+ *   Devuelve el índice de la etiqueta + 1.
+ *
+ **************************************************************/
+
+int te_busca
+	(
+	 dword direccion,
+	 modo_t tipo_memoria
+	);
+
+
+/*** End prototypes ***/

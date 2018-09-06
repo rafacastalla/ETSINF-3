@@ -1,0 +1,28 @@
+/*** Begin prototypes ***/
+
+/***************************************************************
+ *
+ * Func: fase_EX_1
+ *
+ * Desc: Implementa la fase de ejecucion de los operadores
+ * multiciclo. Comienza la ejecución de las operaciones que tienen
+ * todos los operandos, y el operador libre.
+ *
+ **************************************************************/
+
+void fase_EX_1 ( );
+
+/***************************************************************
+ *
+ * Func: fase_EX_2
+ *
+ * Desc: Implementa la fase de ejecucion de los operadores
+ * multiciclo. Avanza la ejecución de las operaciones que se están
+ * ejecutando en cada operador.
+ *
+ **************************************************************/
+
+void fase_EX_2 ( );
+
+
+/*** End prototypes ***/

@@ -1,0 +1,26 @@
+/* input.lex.c */
+int yylex(void);
+void yyrestart(FILE *input_file);
+void yy_switch_to_buffer(YY_BUFFER_STATE new_buffer);
+YY_BUFFER_STATE yy_create_buffer(FILE *file, int size);
+void yy_delete_buffer(YY_BUFFER_STATE b);
+void yy_flush_buffer(YY_BUFFER_STATE b);
+void yypush_buffer_state(YY_BUFFER_STATE new_buffer);
+void yypop_buffer_state(void);
+YY_BUFFER_STATE yy_scan_buffer(char *base, yy_size_t size);
+YY_BUFFER_STATE yy_scan_string(const char *yystr);
+YY_BUFFER_STATE yy_scan_bytes(const char *yybytes, int _yybytes_len);
+int yyget_lineno(void);
+FILE *yyget_in(void);
+FILE *yyget_out(void);
+int yyget_leng(void);
+char *yyget_text(void);
+void yyset_lineno(int line_number);
+void yyset_in(FILE *in_str);
+void yyset_out(FILE *out_str);
+int yyget_debug(void);
+void yyset_debug(int bdebug);
+int yylex_destroy(void);
+void *yyalloc(yy_size_t size);
+void *yyrealloc(void *ptr, yy_size_t size);
+void yyfree(void *ptr);

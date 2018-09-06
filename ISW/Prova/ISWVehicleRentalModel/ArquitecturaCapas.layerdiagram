@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<layerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="224b9e92-d9a6-4d75-98ff-5802da5f35ce" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/LayerDesigner">
+  <layers>
+    <layer Id="74f6867b-4930-4ec6-ad7f-4f023ecef531" name="Presentation">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="e2b7d75e-75e4-480b-b187-2b3c68a82595" direction="Forward">
+          <layerMoniker Id="c089207e-eab3-4aee-b8e9-9663e9469fa2" />
+        </dependencyFromLayerToLayer>
+        <dependencyFromLayerToLayer Id="40c629e7-bb5c-4733-bdb8-64b7228cb5a7" direction="Forward">
+          <layerMoniker Id="5f915ec0-709d-410e-a38b-0b5ff0306669" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+    </layer>
+    <layer Id="c089207e-eab3-4aee-b8e9-9663e9469fa2" name="Business Logic">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="bc3f2e2f-8df6-4a5f-a97b-c0d960a8134f" direction="Forward">
+          <layerMoniker Id="f66b0989-724b-4a62-b354-8f0479fe299c" />
+        </dependencyFromLayerToLayer>
+        <dependencyFromLayerToLayer Id="c1dea18e-eddf-40e9-a0f1-43ba63285e3a" direction="Forward">
+          <layerMoniker Id="5f915ec0-709d-410e-a38b-0b5ff0306669" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+    </layer>
+    <layer Id="f66b0989-724b-4a62-b354-8f0479fe299c" name="Persistence">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="aac9f568-df95-4b02-8c8c-96feb0002fec" direction="Forward">
+          <layerMoniker Id="5f915ec0-709d-410e-a38b-0b5ff0306669" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+    </layer>
+    <layer Id="5f915ec0-709d-410e-a38b-0b5ff0306669" name="Entities" />
+  </layers>
+</layerModel>

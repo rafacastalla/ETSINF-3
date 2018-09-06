@@ -1,0 +1,38 @@
+D:\Workspace\ISW\Visual Studio 2015\GestDep_ISW_2017\GestDep.BllUnitTest\obj\Debug\GestDep.BllUnitTest.csprojResolveAssemblyReference.cache
+D:\Workspace\ISW\Visual Studio 2015\GestDep_ISW_2017\GestDep.BllUnitTest\bin\Debug\GestDep.BllUnitTest.dll.config
+D:\Workspace\ISW\Visual Studio 2015\GestDep_ISW_2017\GestDep.BllUnitTest\bin\Debug\GestDep.BllUnitTest.dll
+D:\Workspace\ISW\Visual Studio 2015\GestDep_ISW_2017\GestDep.BllUnitTest\bin\Debug\GestDep.BllUnitTest.pdb
+D:\Workspace\ISW\Visual Studio 2015\GestDep_ISW_2017\GestDep.BllUnitTest\bin\Debug\GestDepLib.dll
+D:\Workspace\ISW\Visual Studio 2015\GestDep_ISW_2017\GestDep.BllUnitTest\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+D:\Workspace\ISW\Visual Studio 2015\GestDep_ISW_2017\GestDep.BllUnitTest\bin\Debug\EntityFramework.dll
+D:\Workspace\ISW\Visual Studio 2015\GestDep_ISW_2017\GestDep.BllUnitTest\bin\Debug\GestDepLib.pdb
+D:\Workspace\ISW\Visual Studio 2015\GestDep_ISW_2017\GestDep.BllUnitTest\bin\Debug\EntityFramework.xml
+D:\Workspace\ISW\Visual Studio 2015\GestDep_ISW_2017\GestDep.BllUnitTest\bin\Debug\es\Microsoft.VisualStudio.QualityTools.UnitTestFramework.resources.dll
+D:\Workspace\ISW\Visual Studio 2015\GestDep_ISW_2017\GestDep.BllUnitTest\obj\Debug\GestDep.BllUnitTest.dll
+D:\Workspace\ISW\Visual Studio 2015\GestDep_ISW_2017\GestDep.BllUnitTest\obj\Debug\GestDep.BllUnitTest.pdb
+D:\Workspace\ISW\Visual Studio 2015\GestDep_ISW_2017\GestDep.BllUnitTest\bin\Debug\EntityFramework.SqlServer.dll
+D:\Workspace\ISW\Visual Studio 2015\GestDep_ISW_2017\GestDep.BllUnitTest\bin\Debug\EntityFramework.SqlServer.xml
+D:\treballISW\GestDep.BllUnitTest\obj\Debug\GestDep.BllUnitTest.csprojResolveAssemblyReference.cache
+D:\treballISW\GestDep.BllUnitTest\obj\Debug\GestDep.BllUnitTest.dll
+D:\treballISW\GestDep.BllUnitTest\obj\Debug\GestDep.BllUnitTest.pdb
+D:\treballISW\GestDep.BllUnitTest\bin\Debug\GestDep.BllUnitTest.dll.config
+D:\treballISW\GestDep.BllUnitTest\bin\Debug\GestDep.BllUnitTest.dll
+D:\treballISW\GestDep.BllUnitTest\bin\Debug\GestDep.BllUnitTest.pdb
+D:\treballISW\GestDep.BllUnitTest\bin\Debug\GestDepLib.dll
+D:\treballISW\GestDep.BllUnitTest\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+D:\treballISW\GestDep.BllUnitTest\bin\Debug\GestDepLib.pdb
+D:\treballISW\GestDep.BllUnitTest\bin\Debug\EntityFramework.xml
+D:\treballISW\GestDep.BllUnitTest\bin\Debug\EntityFramework.SqlServer.xml
+D:\treballISW\GestDep.BllUnitTest\bin\Debug\es\Microsoft.VisualStudio.QualityTools.UnitTestFramework.resources.dll
+D:\Git\UPV\practiquesisw\GestDep.BllUnitTest\obj\Debug\GestDep.BllUnitTest.csprojResolveAssemblyReference.cache
+D:\Git\UPV\practiquesisw\GestDep.BllUnitTest\obj\Debug\GestDep.BllUnitTest.dll
+D:\Git\UPV\practiquesisw\GestDep.BllUnitTest\obj\Debug\GestDep.BllUnitTest.pdb
+D:\Git\UPV\practiquesisw\GestDep.BllUnitTest\bin\Debug\GestDep.BllUnitTest.dll.config
+D:\Git\UPV\practiquesisw\GestDep.BllUnitTest\bin\Debug\GestDep.BllUnitTest.dll
+D:\Git\UPV\practiquesisw\GestDep.BllUnitTest\bin\Debug\GestDep.BllUnitTest.pdb
+D:\Git\UPV\practiquesisw\GestDep.BllUnitTest\bin\Debug\GestDepLib.dll
+D:\Git\UPV\practiquesisw\GestDep.BllUnitTest\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+D:\Git\UPV\practiquesisw\GestDep.BllUnitTest\bin\Debug\GestDepLib.pdb
+D:\Git\UPV\practiquesisw\GestDep.BllUnitTest\bin\Debug\EntityFramework.xml
+D:\Git\UPV\practiquesisw\GestDep.BllUnitTest\bin\Debug\EntityFramework.SqlServer.xml
+D:\Git\UPV\practiquesisw\GestDep.BllUnitTest\bin\Debug\es\Microsoft.VisualStudio.QualityTools.UnitTestFramework.resources.dll

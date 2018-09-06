@@ -1,0 +1,47 @@
+/*** Begin prototypes ***/
+
+/***************************************************************
+ *
+ * Func: imprime_etapas_txt
+ *
+ * Desc:
+ *   Imprime el estado de la maquina
+ *
+ **************************************************************/
+
+void imprime_etapas_txt ( );
+
+/***************************************************************
+ *
+ * Func: imprime_reg_txt
+ *
+ * Desc: 
+ *   Imprime el estado de la maquina (i: Registros)
+ *
+ **************************************************************/
+
+void imprime_reg_txt ( );
+
+/***************************************************************
+ *
+ * Func: imprime_memdatos_txt
+ *
+ * Desc: 
+ *   Imprime el estado de la maquina (ii: memoria de datos)
+ *
+ **************************************************************/
+
+void imprime_memdatos_txt ( );
+
+/***************************************************************
+ *
+ * Func: imprime_final_txt
+ *
+ * Desc: Imprime la configuracion y resultados finales
+ *
+ **************************************************************/
+
+void imprime_final_txt ( );
+
+
+/*** End prototypes ***/

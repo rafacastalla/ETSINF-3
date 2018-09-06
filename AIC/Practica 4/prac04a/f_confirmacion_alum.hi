@@ -1,0 +1,2 @@
+/* f_confirmacion_alum.c */
+void fase_COM_alum(void);

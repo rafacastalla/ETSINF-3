@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{79ea4170-7f2b-4367-ad38-604a4e9dce93}</ProjectGuid>
+    <ArchitectureToolsVersion>2.0.0.0</ArchitectureToolsVersion>
+    <Name>Model</Name>
+    <RootNamespace>ISWVehicleRentalModel</RootNamespace>
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" Condition="'$(VSToolsPath)' != ''" />
+  <ItemGroup>
+    <Content Include="DiseñoCapas.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="DiseñoCapas.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>DiseñoCapas.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="ISWVehicleRentalExample.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ISWVehicleRentalExample.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>ISWVehicleRentalExample.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="ModelDefinition\Package_1255.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_1257.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_1258.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_1302.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_1855.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_1919.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Folder Include="ModelDefinition\" />
+    <Content Include="ISWVehicleRentalExample.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ISWVehicleRentalExample.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>ISWVehicleRentalExample.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="ModelDefinition\ISWVehicleRentalModel.uml">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Validate Include="ArquitecturaCapas.layerdiagram">
+      <SubType>Content</SubType>
+    </Validate>
+    <Validate Include="ArquitecturaCapas.layerdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>ArquitecturaCapas.layerdiagram</DependentUpon>
+    </Validate>
+    <Validate Include="ArquitecturaCapas.layerdiagram.suppressions">
+      <SubType>Content</SubType>
+      <DependentUpon>ArquitecturaCapas.layerdiagram</DependentUpon>
+    </Validate>
+  </ItemGroup>
+</Project>

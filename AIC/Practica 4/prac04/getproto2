@@ -1,0 +1,161 @@
+#! /usr/bin/awk -f
+
+#
+# Script para la generación automática de prototipos en C a partir
+#  de funciones con cabecera generada por emacs.
+# 
+# Fecha: 19-08-97
+#
+# Autor: Sergio Sáez
+#
+
+BEGIN {
+  Estado= "None";
+  print "/*** Begin prototypes ***/\n";
+  Last= "Public";
+  Item= "";
+  CName= ARGV[1];
+  while (index(CName, "/") !=0)
+    {
+      CName= substr(CName, index(CName, "/")+1); 
+    }
+  CName= substr(CName, 1, length(CName)-2) "_C";
+
+  abriendo= 0;
+  cerrando= 0;
+  funcion= 0;
+  previo= "";
+}
+
+
+END { 
+  if (Last == "Private")
+    {
+      print "\n#endif\n";
+    }
+  print "\n/*** End prototypes ***/";
+}
+
+# Patrones de seccion
+
+$1 == "#ifdef" && Estado == "None" {
+  if (abriendo != 1)
+    {
+      funcion= 0;
+      abriendo= 1; 
+      previo= previo "\n" $0;
+    }
+  else
+    {
+      cerrando= 1;
+    }
+}
+
+$1 == "#else" && Estado == "None" && cerrando != 1 {
+  if (abriendo == 1 && funcion != 1)
+    {
+      cerrando= 1;
+    }
+  else
+    {
+      abriendo= 1;
+      previo= precio "\n" $0;
+    }
+}
+
+$1 == "#endif" && Estado == "None" {
+  if (cerrando != 1)
+    {
+      if (abriendo == 1 && funcion == 1)
+	{
+	  previo= previo "\n" $0;
+	}
+      else
+	{
+	  previo= "";
+	}
+      abriendo= 0;
+      cerrando= 0;
+      funcion= 0;
+    }
+  else
+    {
+      previo= "";
+      cerrando= 0;
+    }
+}
+
+index($1, "/***") == 1 && Estado == "None" {
+  comline= $0;
+}
+
+$1 == "*"  && $2 == "Func:" {
+  Estado= "Funcion";
+  funcion= 1;
+  Coment= comline "\n *\n";
+}
+
+index($1, "*") == 1 && Estado == "Funcion" {
+  Coment= Coment $0 "\n";
+}
+
+index($1, "*") != 1 && $1 != "" && Estado == "Funcion" {
+  Estado= "Cabecera";
+  Proto= "";
+}
+
+Estado == "Cabecera" && index($0, "{") != 0 {
+  sub(/\{.*/, ";", $0);
+  Proto= Proto $0;
+  gsub(/\) ;/,	");", Proto);
+  gsub(/ /,	"\t", Proto);
+  gsub(/\t+/,	"\t", Proto);
+  gsub(/^\t/,	"", Proto);
+  gsub(/\t*,\t*/,	",", Proto);
+  gsub(/\(\t*/,	"(", Proto);
+  gsub(/\t*\)/,	")", Proto);
+  gsub(/\t+/,	" ", Proto);
+  gsub(/,/,	",\n\t ", Proto);
+  gsub(/[\n\t ]*\/\*/,	"\n\t\t/*", Proto);
+  gsub(/\*\//,	"*/\n\t", Proto);
+  gsub(/\(/,	"\n\t(\n\t ", Proto);
+  gsub(/\)/,	"\n\t)", Proto);
+  gsub(/[\n\t ]*\)/,	"\n\t)", Proto);
+  gsub(/[\n\t]*\([\n\t ]*\)/, "( )", Proto);
+
+  if (substr(Proto, 1, 6) == "static")
+    {
+      Item= "Private";
+    }
+  else
+    {
+      Item= "Public";
+    }
+  if (Item == "Private" && Last == "Public")
+    {
+      print "#ifdef " CName "\n";
+    }
+  if (Item == "Public" && Last == "Private")
+    {
+      print "#endif\n";
+    }
+
+  if (previo != "")
+    {
+      print previo "\n";
+      previo= "";
+    }
+  print Coment;
+  print Proto "\n";
+  Last= Item;
+  Item= "";
+  Estado= "None";
+}
+
+Estado == "Cabecera" && $0 !~ /;/ && $0 !~ /\{/ && $1 != "" {
+  for (i=1; i <= NF; i++)
+    {
+      Proto= Proto " " $i;
+    }
+}
+

@@ -1,0 +1,4 @@
+/* input.yacc.c */
+int yyparse(void);
+int yyerror(char *s);
+void ensamblador(FILE *f_input);

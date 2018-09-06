@@ -1,0 +1,49 @@
+/*** Begin prototypes ***/
+
+/***************************************************************
+ *
+ * Func: inicializa_prediccion
+ *
+ * Desc: Inicializa las tablas de predicción
+ *
+ **************************************************************/
+
+void inicializa_prediccion_sol ( );
+
+/***************************************************************
+ *
+ * Func: obtener_prediccion
+ *
+ * Desc: Obtiene la predicción para una instrucción dada. Devuelve cierto si la
+ * instrucción era un salto, modificando el valor del parámetro 'prediccion'.  Si la
+ * predicción es 'salto tomado' (prediccion == SI), se modifica el valor del parámetro
+ * 'destino' para indicar la dirección de destino del salto..
+ *
+ **************************************************************/
+
+boolean obtener_prediccion_sol 
+	(
+	 word PC,
+	 ciclo_t orden,
+	 boolean * prediccion,
+	 dword * destino
+	);
+
+/***************************************************************
+ *
+ * Func: actualizar_prediccion
+ *
+ * Desc: Actualiza la predicción para una instrucción dada.
+ *
+ **************************************************************/
+
+void actualizar_prediccion_sol 
+	(
+	 word PC,
+	 ciclo_t orden,
+	 boolean condicion,
+	 dword destino
+	);
+
+
+/*** End prototypes ***/

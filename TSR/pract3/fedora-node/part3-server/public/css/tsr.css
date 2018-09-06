@@ -1,0 +1,150 @@
+<style type="text/css">
+
+@CHARSET "UTF-8";
+
+body {
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, Arial,
+		Helvetica, sans-serif;
+	font-size: 12px;
+}
+
+p,h1,form,button {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+.spacer {
+	clear: both;
+	height: 1px;
+}
+
+.tsrForm {
+	margin: 0 auto;
+	width: 400px;
+	padding: 14px;
+}
+
+#tsrStyle {
+	border: solid 2px #a0a0a0;
+	border-radius: 3px;
+	background: #f0f0f0;
+}
+
+#tsrStyle h1 {
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 8px;
+}
+
+#tsrStyle p {
+	font-size: 11px;
+	color: #666666;
+	margin-bottom: 20px;
+	border-bottom: solid 1px #a0a0a0;
+	padding-bottom: 10px;
+}
+
+#tsrStyle label {
+	display: block;
+	font-weight: bold;
+	text-align: right;
+	width: 140px;
+	float: left;
+}
+
+#tsrStyle .small {
+	color: #666666;
+	display: block;
+	font-size: 11px;
+	font-weight: normal;
+	text-align: right;
+	width: 140px;
+}
+
+#tsrStyle .textbox {
+	float: left;
+	font-size: 12px;
+	padding: 4px 2px;
+	border: solid 1px #b8b8b8;
+	border-radius: 3px;
+	width: 200px;
+	margin: 2px 0 20px 10px;
+}
+
+#tsrStyle .radio {
+	position: relative;
+	border: 0;
+}
+
+#tsrStyle .radio ul {
+	list-style: none;
+	left: -0px;
+}
+
+#tsrStyle .radio li {
+	position: relative;
+	white-space: nowrap;
+}
+
+#tsrStyle .radiobutton {
+	width: auto;
+	float: none;
+	vertical-align: middle;
+}
+
+#tsrStyle .error {
+	color: red;
+}
+
+#tsrStyle button {
+	clear: both;
+	margin-left: 150px;
+	width: 125px;
+	height: 31px;
+	background: #666666 url(img/button.png) no-repeat;
+	text-align: center;
+	line-height: 31px;
+	color: #FFFFFF;
+	font-size: 11px;
+	font-weight: bold;
+	border-radius:3px;
+}
+
+#tsrCorrect {
+	border: 0;
+	padding:5px;
+	margin:5px;
+	background:ffffcc;
+}
+
+#tsrCorrect .title {
+	width:420px;
+  text-align:center;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+#tsrCorrect table {
+  margin-left:auto;
+  margin-right:auto;
+}
+
+#tsrCorrect .rightcolumn{
+  padding:5px;
+  width:200px;
+}
+
+#tsrCorrect .leftcolumn{
+  padding:5px;
+  width:200px;
+}
+
+#tsrCorrect .header{
+	font-weight:bold;
+  padding:10px;
+  border-radius:3px;
+	background:#ffcc66;
+}
+
+</style>

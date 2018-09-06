@@ -1,0 +1,2 @@
+/* f_transferencia.c */
+void fase_WB(void);

@@ -1,0 +1,7 @@
+/* memoria.c */
+void mem_rango(dword dir, tipo_t tipo, dword *m_from, dword *m_to);
+void mem_etiqueta(dword dir, tipo_t tipo);
+valor_t lee_mem_datos(dword direccion, tipo_t tipo_dato);
+void escribe_mem_datos(dword direccion, valor_t valor, tipo_t tipo_dato);
+instruccion_t lee_mem_instruc(dword direccion);
+void escribe_mem_instruc(dword direccion, instruccion_t instruccion);

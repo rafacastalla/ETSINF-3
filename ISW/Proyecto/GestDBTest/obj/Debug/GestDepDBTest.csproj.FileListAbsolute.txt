@@ -1,0 +1,40 @@
+D:\Workspace\ISW\Visual Studio 2015\GestDep_ISW_2017\DALTest\bin\Debug\GestDepDBTest.exe.config
+D:\Workspace\ISW\Visual Studio 2015\GestDep_ISW_2017\GestDBTest\bin\Debug\GestDepDBTest.exe.config
+D:\Workspace\ISW\Visual Studio 2015\GestDep_ISW_2017\GestDBTest\bin\Debug\GestDepDBTest.exe
+D:\Workspace\ISW\Visual Studio 2015\GestDep_ISW_2017\GestDBTest\bin\Debug\GestDepDBTest.pdb
+D:\Workspace\ISW\Visual Studio 2015\GestDep_ISW_2017\GestDBTest\bin\Debug\EntityFramework.dll
+D:\Workspace\ISW\Visual Studio 2015\GestDep_ISW_2017\GestDBTest\bin\Debug\EntityFramework.SqlServer.dll
+D:\Workspace\ISW\Visual Studio 2015\GestDep_ISW_2017\GestDBTest\bin\Debug\GestDepLib.dll
+D:\Workspace\ISW\Visual Studio 2015\GestDep_ISW_2017\GestDBTest\bin\Debug\GestDepLib.pdb
+D:\Workspace\ISW\Visual Studio 2015\GestDep_ISW_2017\GestDBTest\bin\Debug\EntityFramework.xml
+D:\Workspace\ISW\Visual Studio 2015\GestDep_ISW_2017\GestDBTest\bin\Debug\EntityFramework.SqlServer.xml
+D:\Workspace\ISW\Visual Studio 2015\GestDep_ISW_2017\GestDBTest\obj\Debug\GestDepDBTest.csprojResolveAssemblyReference.cache
+D:\Workspace\ISW\Visual Studio 2015\GestDep_ISW_2017\GestDBTest\obj\Debug\GestDepDBTest.exe
+D:\Workspace\ISW\Visual Studio 2015\GestDep_ISW_2017\GestDBTest\obj\Debug\GestDepDBTest.pdb
+C:\Users\nando\Desktop\GestDBTest\bin\Debug\GestDepDBTest.exe.config
+C:\Users\nando\Desktop\GestDBTest\obj\Debug\GestDepDBTest.exe
+C:\Users\nando\Desktop\GestDBTest\obj\Debug\GestDepDBTest.pdb
+D:\treballISW\GestDBTest\obj\Debug\GestDepDBTest.csprojResolveAssemblyReference.cache
+D:\treballISW\GestDBTest\obj\Debug\GestDepDBTest.exe
+D:\treballISW\GestDBTest\obj\Debug\GestDepDBTest.pdb
+D:\treballISW\GestDBTest\bin\Debug\GestDepDBTest.exe.config
+D:\treballISW\GestDBTest\bin\Debug\GestDepDBTest.exe
+D:\treballISW\GestDBTest\bin\Debug\GestDepDBTest.pdb
+D:\treballISW\GestDBTest\bin\Debug\GestDepLib.dll
+D:\treballISW\GestDBTest\bin\Debug\GestDepLib.pdb
+D:\treballISW\GestDBTest\bin\Debug\EntityFramework.dll
+D:\treballISW\GestDBTest\bin\Debug\EntityFramework.SqlServer.dll
+D:\treballISW\GestDBTest\bin\Debug\EntityFramework.xml
+D:\treballISW\GestDBTest\bin\Debug\EntityFramework.SqlServer.xml
+D:\Git\UPV\practiquesisw\GestDBTest\obj\Debug\GestDepDBTest.csprojResolveAssemblyReference.cache
+D:\Git\UPV\practiquesisw\GestDBTest\bin\Debug\GestDepDBTest.exe.config
+D:\Git\UPV\practiquesisw\GestDBTest\bin\Debug\GestDepDBTest.exe
+D:\Git\UPV\practiquesisw\GestDBTest\bin\Debug\GestDepDBTest.pdb
+D:\Git\UPV\practiquesisw\GestDBTest\bin\Debug\EntityFramework.dll
+D:\Git\UPV\practiquesisw\GestDBTest\bin\Debug\EntityFramework.SqlServer.dll
+D:\Git\UPV\practiquesisw\GestDBTest\bin\Debug\GestDepLib.dll
+D:\Git\UPV\practiquesisw\GestDBTest\bin\Debug\GestDepLib.pdb
+D:\Git\UPV\practiquesisw\GestDBTest\bin\Debug\EntityFramework.xml
+D:\Git\UPV\practiquesisw\GestDBTest\bin\Debug\EntityFramework.SqlServer.xml
+D:\Git\UPV\practiquesisw\GestDBTest\obj\Debug\GestDepDBTest.exe
+D:\Git\UPV\practiquesisw\GestDBTest\obj\Debug\GestDepDBTest.pdb

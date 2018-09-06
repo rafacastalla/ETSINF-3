@@ -1,0 +1,17 @@
+/* presentacion.c */
+void crea_firma(char *fichero);
+void abre_firma(char *fichero);
+void nueva_firma(void);
+char *procesa_firma(char *campo, char *valor);
+void cierra_firma(void);
+void color_etiqueta_memdatos(char *color, dword direccion);
+void __imprime_instruccion(char *instruc, dword PC, char *file, int line);
+void init_instruc(dword PC, ciclo_t orden);
+void muestra_fase(char *fase, ciclo_t orden);
+void imprime_inicio(void);
+void imprime_final(void);
+void imprime_estado(void);
+void imprime_crono(void);
+void imprime_predictor(void);
+void imprime_config(void);
+void imprime_estadisticas(void);

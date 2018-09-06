@@ -1,0 +1,3 @@
+/* f_confirmacion.c */
+void cancelar_instrucciones(void);
+void fase_COM(void);

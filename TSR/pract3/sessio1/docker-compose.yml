@@ -1,0 +1,22 @@
+version: '2'
+services:
+  wor: 
+    image: worker
+    build: ./worker/
+    links:
+     - bro
+    environment:
+     - BROKER_URL=tcp://bro:8060
+  cli:
+    image: client
+    build: ./client/
+    links:
+     - bro
+    environment:
+     - BROKER_URL=tcp://bro:8059
+  bro:
+    image: broker
+    build: ./broker/
+    expose:
+      - "8059"
+      - "8060"

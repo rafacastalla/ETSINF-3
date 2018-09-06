@@ -1,0 +1,11 @@
+octave:1> T = [0 0 0 .576; 0 0 1 .008; 0 1 0 .144; 0 1 1 .072;1 0 0 .064; 1 0 1 .012; 1 1 0 .016; 1 1 1 .108];
+octave:2> Pd1c1=sum(T(find(T(:,1)==1 & T(:,2)==1),end))
+Pd1c1 =  0.12400
+octave:3> Pc1=sum(T(find(T(:,2)==1),end))
+Pc1 =  0.34000
+octave:4> Pd1Dc1=Pd1c1/Pc1
+Pd1Dc1 =  0.36471
+octave:5> Pd1=sum(T(find(T(:,1)==1),end))
+Pd1 =  0.20000
+octave:7> Ptotal=Pc1*(Pd1Dc1/Pd1)
+Ptotal =  0.62000

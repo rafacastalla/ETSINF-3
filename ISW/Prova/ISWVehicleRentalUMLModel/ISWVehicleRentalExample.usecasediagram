@@ -1,0 +1,272 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="5bbc1c23-ab28-4dfb-ab9d-a806bea891f4" name="ISWVehicleRental" linkedPackageId="2d654524-4ffd-4d1a-a27b-3adb1984b183" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <appliedStereotypesInternal>
+    <stereotypeInstance Id="611e2271-4981-484a-8603-a9c540ec4ea1" name="namespace" profile="CSharpProfile">
+      <elementDefinition Id="30cc2288-8930-4d08-87d6-0d4ebe46bf67" />
+    </stereotypeInstance>
+    <stereotypeInstance Id="ab154e17-4322-430b-9981-535f5f64899a" name="TextTemplateBindings" profile="TextTemplateBindings">
+      <elementDefinition Id="891f7ee5-e2b8-4535-b4d5-9046c99dc91c" />
+    </stereotypeInstance>
+    <stereotypeInstance Id="3372ba4b-15df-47ff-aa4f-6787e31e6ddc" name="namespace" profile="CSharpProfile">
+      <elementDefinition Id="d7831c82-0f3e-4489-95e6-85624d01986f" />
+      <propertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="fcf4c9d1-ba42-48f5-9e54-fa850d8d8fc7">
+          <propertyInstance Id="d52577ec-dc26-48d9-86b6-f4ff4acb7d86" name="BaseName">
+            <elementDefinition Id="ae8c2a0a-1e8a-4203-be9f-f4120584f9d0" />
+          </propertyInstance>
+          <elementDefinition Id="ba739278-11bf-4523-8f40-948bc6c815e0" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="5f365aab-1d34-4074-90bb-58a58ae2dc69">
+          <propertyInstance Id="ee445831-1363-4ba5-93b1-7f67ee9f6f6d" name="ClrAttributes">
+            <elementDefinition Id="e578d496-06ab-46f8-b9b3-68b73aaa6502" />
+          </propertyInstance>
+          <elementDefinition Id="f0745aa7-2480-418a-b20c-bd44ec9b11d5" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="85129c86-83bd-42c9-bc2f-bbd65fb341f7">
+          <propertyInstance Id="2e3993b5-4959-4e46-9991-3f80bbde3dd1" name="Usings">
+            <elementDefinition Id="ef51a04f-1633-464a-8570-924e163be59a" />
+          </propertyInstance>
+          <elementDefinition Id="2b24ed6b-9a27-43e6-a298-ceeee75396ba" />
+        </stereotypeInstanceHasPropertyInstances>
+      </propertyInstances>
+    </stereotypeInstance>
+    <stereotypeInstance Id="46b868bc-1862-4b5b-aa0f-371d446260f2" name="TextTemplateBindings" profile="TextTemplateBindings">
+      <elementDefinition Id="6fb03880-881c-40e2-8284-4e7c678d8430" />
+      <propertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="000bffdd-554e-484e-bc65-076d64943884">
+          <propertyInstance Id="8b191c6b-11e7-4cfa-8cc1-fa961a66268c" name="Alias" value="ClassTemplate|EnumTemplate|InterfaceTemplate|StructTemplate">
+            <elementDefinition Id="4035775b-03dd-4682-b03f-6ee7a89efe15" />
+          </propertyInstance>
+          <elementDefinition Id="450ddee1-f0ae-4126-889b-b9d38c6e96cf" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="3ff8e77a-1713-451f-802b-45715e2377fe">
+          <propertyInstance Id="cdf0057d-33e6-4e1a-91dd-7ab3137bc525" name="TemplateFilePath" value="ClassTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4|EnumTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\EnumTemplate.t4|InterfaceTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\InterfaceTemplate.t4|StructTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4">
+            <elementDefinition Id="80f02c48-4cd0-4668-97be-25f91b915489" />
+          </propertyInstance>
+          <elementDefinition Id="96e41d2f-554a-47b1-95d1-18658b1ef9c3" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="aeb2a56f-e1bc-402f-8045-8b0ffed8c0bf">
+          <propertyInstance Id="ee18688c-4ba5-4ded-87e1-9fa923b8691e" name="ProjectPath" value="ClassTemplate=..\ISWVehicleRentalUMLModelLib\ISWVehicleRentalUMLModelLib.csproj|EnumTemplate=..\ISWVehicleRentalUMLModelLib\ISWVehicleRentalUMLModelLib.csproj|InterfaceTemplate=..\ISWVehicleRentalUMLModelLib\ISWVehicleRentalUMLModelLib.csproj|StructTemplate=..\ISWVehicleRentalUMLModelLib\ISWVehicleRentalUMLModelLib.csproj">
+            <elementDefinition Id="304178f9-7ec7-4dae-914e-fef1ad991742" />
+          </propertyInstance>
+          <elementDefinition Id="117965c4-f52e-4091-bc57-c6c7ae6f066f" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="a4dc5a24-2478-4902-8077-b2eadf57dbcb">
+          <propertyInstance Id="45a19a2c-39d5-4027-a2b9-97f5f871a458" name="TargetDirectory" value="ClassTemplate=GeneratedCode\{PackageStructure}|EnumTemplate=GeneratedCode\{PackageStructure}|InterfaceTemplate=GeneratedCode\{PackageStructure}|StructTemplate=GeneratedCode\{PackageStructure}">
+            <elementDefinition Id="b8b7d306-2d54-4b7f-b03e-13d04f11279b" />
+          </propertyInstance>
+          <elementDefinition Id="92e4a1dc-133b-4901-bbcf-b0cb649c480e" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="2e74a019-a8b2-4aa4-bdac-829847175e3a">
+          <propertyInstance Id="931e3a8e-ccb4-4f8a-a373-ee5007417d6b" name="TargetName" value="ClassTemplate={Name}|EnumTemplate={Name}|InterfaceTemplate={Name}|StructTemplate={Name}">
+            <elementDefinition Id="03f127f5-3ae4-4931-9002-132ac1651834" />
+          </propertyInstance>
+          <elementDefinition Id="a9fb4575-9f75-4209-8b1f-3451a34be641" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="3908181e-a1c9-4d48-806a-2b5a5f77df40">
+          <propertyInstance Id="7f1df03a-6d52-47ad-bfd7-127800d074ed" name="Overwrite" value="ClassTemplate=True|EnumTemplate=True|InterfaceTemplate=True|StructTemplate=True">
+            <elementDefinition Id="0d8f6537-b4e1-4d25-b827-48352487b277" />
+          </propertyInstance>
+          <elementDefinition Id="9de9629d-9a94-4b62-a091-abda7b026feb" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="538e69a4-5aa7-44de-ab1a-dff1a77e2169">
+          <propertyInstance Id="6f421e18-8aa9-4559-8c3b-900e3cc2a419" name="Parameters">
+            <elementDefinition Id="6d246125-907c-4ce8-8650-565f9c94ef56" />
+          </propertyInstance>
+          <elementDefinition Id="459359bc-cb2d-46fd-89cd-401e83ea3a48" />
+        </stereotypeInstanceHasPropertyInstances>
+      </propertyInstances>
+    </stereotypeInstance>
+  </appliedStereotypesInternal>
+  <profileInstances>
+    <packageHasProfileInstances Id="14ca33c4-dfb2-4ee5-9feb-7ea4538ca093">
+      <profileInstance Id="332d5ea7-df40-4a48-b7ae-83cdcbe58d7a" name="CSharpProfile">
+        <elementDefinition Id="8d0c7961-5370-4bf2-a6e0-5af9793ee49a" />
+      </profileInstance>
+      <elementDefinition Id="8bf301c8-cc62-4e66-9214-a4a49fcbbe00" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="ebd185ec-f169-40bc-8a02-1a9554c1a830">
+      <profileInstance Id="b718bed4-2133-46d5-884d-0e431d3aaef3" name="TextTemplateBindings">
+        <elementDefinition Id="e91f0c1a-91c4-4610-91db-282d26c24ed6" />
+      </profileInstance>
+      <elementDefinition Id="04bb099d-d274-484b-9bdc-8120368969c7" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="6e75eee4-e90b-4c84-89ff-a3b1185a6e62" name="Employee" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="7356c2f5-b0a6-42b9-a304-2b63d936e091" />
+        <targetEnds>
+          <association Id="9e7d93a5-c529-4aee-89e4-63f3b3bfa14a" isDerived="false" sourceEndRoleName="Employee" targetEndRoleName="Add New Reservation" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="f53b1fd2-81a5-44eb-a0b5-b84d7d9bc59d" LastKnownName="Add New Reservation" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b31d15d8-bd9c-4510-b5e9-f3f45497f96e" name="Employee" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="d9ceff84-9eae-4e37-ba50-954319284b9e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="77e2b4de-2886-4f74-839b-0efb56f92eed" name="Add New Reservation" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="db3ab37f-7913-4c92-b7b0-1a926758ca74" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="a608b220-b51b-4af4-b87e-abde2241045b" />
+          </association>
+          <association Id="102b79e9-773d-4691-927b-3a0d662bc598" isDerived="false" sourceEndRoleName="Employee" targetEndRoleName="List Customer Reservations" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="fd17f932-42d9-4bbf-b58f-19bbb5952d31" LastKnownName="List Customer Reservations" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e5a65208-cb5d-49b6-b4d4-49c1a2594c6e" name="Employee" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="194705cc-d69b-4fa7-a65b-b1e1d9d8a592" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0e33453e-c54a-4ca8-8496-36efa15310d7" name="List Customer Reservations" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="2768a27e-22c5-4803-a50c-279b58b3484c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="f3a0d2a1-9e18-4a73-8254-c34cff52fe20" />
+          </association>
+          <association Id="a7f4ca73-91ce-4d39-9d65-a6e42acbf845" isDerived="false" sourceEndRoleName="Employee" targetEndRoleName="List Co-Drivers" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="fa68afd6-65a7-4be7-83b1-6761f6e877b0" LastKnownName="List Co-Drivers" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e9427d95-e9e4-4cf9-973c-4d9d5df9b867" name="Employee" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="e5ad8b05-a5d1-44af-a0ac-6534cb22370c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9c6897ab-74a2-41cf-8195-8af3d90de9e2" name="List Co-Drivers" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="8bd88c4e-187a-4cc1-82d1-e83dccff2d89" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="2c0d0da1-3d70-4f47-9014-8a808bdbe90a" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="f53b1fd2-81a5-44eb-a0b5-b84d7d9bc59d" name="Add New Reservation" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d7e7a845-cf62-40e9-a936-ccb2c63709cd" />
+        <additions>
+          <include Id="d473f28b-c5d7-43a1-8d32-9469ac991459">
+            <useCaseMoniker Id="da62d990-e3f0-43bf-8c7a-60357a97c7cf" LastKnownName="Search Customers" />
+            <elementDefinition Id="edd207a4-a84c-426c-a9e3-a4ccad8c2c1e" />
+          </include>
+          <include Id="452e794f-cc84-48ee-897b-f30424781e72">
+            <useCaseMoniker Id="634c288e-106e-42d3-a19b-eb68ce9a07fd" LastKnownName="Search Drivers" />
+            <elementDefinition Id="b28768b4-9039-4e23-8eb0-17c24bb67c39" />
+          </include>
+          <include Id="a5feecf9-0175-4c10-8eee-f4a3f56f2991">
+            <useCaseMoniker Id="fba73f0e-4dbf-44e3-b3c8-0e7ae3b1dc38" LastKnownName="Search Offices" />
+            <elementDefinition Id="250c290d-c0fd-478d-8b34-3a202e8a7eb4" />
+          </include>
+          <include Id="62245a4d-d1d9-41d5-9538-b62cbe2d1b3d">
+            <useCaseMoniker Id="453a565d-c86f-4780-846b-f32e5a9b9225" LastKnownName="Search Categories" />
+            <elementDefinition Id="6233ed94-81fe-4d6c-a578-72f3136fa558" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="da62d990-e3f0-43bf-8c7a-60357a97c7cf" name="Search Customers" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="a8dd993b-b6c2-4ce0-b792-50463f16fda4" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="56afd693-fb7c-431d-9286-7e61371298ca" name="Add New Customer" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="a56ed5e4-69a1-4d3c-85a6-503e62bf756c" />
+        <extendedCases>
+          <extend Id="e348c1a4-4f70-40a5-8d58-4be925aa8b8b">
+            <useCaseMoniker Id="f53b1fd2-81a5-44eb-a0b5-b84d7d9bc59d" LastKnownName="Add New Reservation" />
+            <elementDefinition Id="d7c600b5-f832-4169-b875-3fde1babb11f" />
+          </extend>
+        </extendedCases>
+        <additions>
+          <include Id="af31b2ef-9486-41ed-8174-586599ee9a9f">
+            <useCaseMoniker Id="5e7f150a-3203-48fa-b905-bc7d79e4797a" LastKnownName="Add New Card" />
+            <elementDefinition Id="a033c63b-0414-4bd6-a2a8-ba033b4a65a2" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="634c288e-106e-42d3-a19b-eb68ce9a07fd" name="Search Drivers" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="85f23216-2f36-4c65-85c7-ec0639b752c6" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="b24ccaf7-c9b5-4278-bbac-797ee9441da3" name="Add New Driver" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f77cc798-4e06-4b1a-b208-97ebeae6860f" />
+        <extendedCases>
+          <extend Id="e2c39381-109b-43f9-858f-294d1fcca910">
+            <useCaseMoniker Id="f53b1fd2-81a5-44eb-a0b5-b84d7d9bc59d" LastKnownName="Add New Reservation" />
+            <elementDefinition Id="f2a7b967-9961-4005-aa65-098bee84e597" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="fba73f0e-4dbf-44e3-b3c8-0e7ae3b1dc38" name="Search Offices" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="3d2818a9-5cae-4a59-a90d-6d2f87a997d5" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="453a565d-c86f-4780-846b-f32e5a9b9225" name="Search Categories" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="0f6946f9-f461-4263-991b-c5213233ab83" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="fd17f932-42d9-4bbf-b58f-19bbb5952d31" name="List Customer Reservations" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="7898beb9-0403-4797-91bc-a9992a9699d6" />
+        <additions>
+          <include Id="469d3fb8-89f2-454f-83d9-9e24513113af">
+            <useCaseMoniker Id="8fbdeaaf-3fca-4879-a856-5820de2a3821" LastKnownName="Search Customers1" />
+            <elementDefinition Id="76e8abae-79e2-44be-bb5e-f29497006c41" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="8fbdeaaf-3fca-4879-a856-5820de2a3821" name="Search Customers1" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="a8252753-59f9-447c-b171-0bf7cc303e1a" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="fa68afd6-65a7-4be7-83b1-6761f6e877b0" name="List Co-Drivers" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="3983cea7-9047-4a3e-ab3f-4acdd67341fd" />
+        <additions>
+          <include Id="4a2a295f-9d1a-42e8-9c3a-96ebd1cd40cf">
+            <useCaseMoniker Id="619c98cc-88b2-45d2-ba72-698b28fed70c" LastKnownName="Search Persons" />
+            <elementDefinition Id="cdcc54b5-5d68-4b8c-8b8a-436fafcbcdaa" />
+          </include>
+          <include Id="9906e75f-e1c9-4d63-af9f-cf23fffd16b0">
+            <useCaseMoniker Id="7a0e2a58-95ea-46b0-9c84-55ae5e7e0c8c" LastKnownName="Search Reservations" />
+            <elementDefinition Id="7d90d087-a96a-4959-8bad-7ed3a7c3b756" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="619c98cc-88b2-45d2-ba72-698b28fed70c" name="Search Persons" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="41d2208f-bf98-40b1-8f41-76b16318b006" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="5e7f150a-3203-48fa-b905-bc7d79e4797a" name="Add New Card" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d8c8b661-a5ea-4ce5-b0a2-1029803619ba" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="7a0e2a58-95ea-46b0-9c84-55ae5e7e0c8c" name="Search Reservations" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="a97d7a72-ee94-4416-93bb-f8349e00d99b" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="2d654524-4ffd-4d1a-a27b-3adb1984b183" name="ISWVehicleRentalUMLModel">
+    <elementDefinition Id="63d6a70a-4c66-4f4d-935b-2a2b2760870b" />
+  </package>
+</useCaseModelRoot>

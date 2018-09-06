@@ -1,0 +1,412 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel"
+  dslVersion="1.0.0.0"
+  Id="556649d1-c979-4a0e-9569-c02d468ffcc0"
+  name="GestDepModel" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <appliedStereotypesInternal>
+    <stereotypeInstance
+      Id="23efdd77-617a-4f93-b70b-a68b3f8aef84"
+      name="namespace"
+      profile="CSharpProfile">
+      <propertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="e9db033a-aea4-483a-80fd-f0e3f9329e7f">
+          <propertyInstance
+            Id="39a12d82-65ce-4ec1-9ed6-3655393230d0"
+            name="BaseName" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="7fcc4736-09ba-4594-a378-3faa26a4921a">
+          <propertyInstance
+            Id="540c3b75-8240-4657-b010-eeaf9be66a6a"
+            name="ClrAttributes" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="9b388182-565b-46eb-aec3-597cb5a5ef2c">
+          <propertyInstance
+            Id="798b5ee1-c2df-4f2c-b459-48afdb947c71"
+            name="Usings" />
+        </stereotypeInstanceHasPropertyInstances>
+      </propertyInstances>
+    </stereotypeInstance>
+    <stereotypeInstance
+      Id="422d5b27-aebc-429f-a04b-39dd85b5a37e"
+      name="TextTemplateBindings"
+      profile="TextTemplateBindings">
+      <propertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="42cd75f3-1acc-43f9-91aa-86bac36b4e2b">
+          <propertyInstance
+            Id="844acca0-f1a3-4534-ba0e-814b0c5e4beb"
+            name="Alias"
+            value="ClassTemplate|EnumTemplate|InterfaceTemplate|StructTemplate" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="6c57f1b8-2c75-4bc8-b16c-09071e320af9">
+          <propertyInstance
+            Id="fecc97d7-80a7-421a-8a56-3098889c3ce0"
+            name="TemplateFilePath"
+            value="ClassTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4|EnumTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\EnumTemplate.t4|InterfaceTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\InterfaceTemplate.t4|StructTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="067a2c1c-0435-4fba-ac8d-5b42831b9418">
+          <propertyInstance
+            Id="a21bf35e-27a1-44f9-ac3e-f4236ecac062"
+            name="ProjectPath"
+            value="ClassTemplate=..\GestDepModelLib\GestDepModelLib.csproj|EnumTemplate=..\GestDepModelLib\GestDepModelLib.csproj|InterfaceTemplate=..\GestDepModelLib\GestDepModelLib.csproj|StructTemplate=..\GestDepModelLib\GestDepModelLib.csproj" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="fff2a994-562e-4f89-b422-9ecaff2c476b">
+          <propertyInstance
+            Id="e65d54b8-3410-4256-816f-c8f6a7e7eb81"
+            name="TargetDirectory"
+            value="ClassTemplate=GeneratedCode\{PackageStructure}|EnumTemplate=GeneratedCode\{PackageStructure}|InterfaceTemplate=GeneratedCode\{PackageStructure}|StructTemplate=GeneratedCode\{PackageStructure}" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="8338b2ac-89ac-4ee2-b2f3-ada097771683">
+          <propertyInstance
+            Id="ab98955b-7691-4307-bdfd-4f7452d38684"
+            name="TargetName"
+            value="ClassTemplate={Name}|EnumTemplate={Name}|InterfaceTemplate={Name}|StructTemplate={Name}" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="6197b86e-91ba-43e2-a9bb-586b0b8e77a2">
+          <propertyInstance
+            Id="889b97cb-04c5-480f-ab6e-dbfe98fd4b37"
+            name="Overwrite"
+            value="ClassTemplate=True|EnumTemplate=True|InterfaceTemplate=True|StructTemplate=True" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="fcfd4d8b-8536-4e1a-b78b-1a07e86bfed6">
+          <propertyInstance
+            Id="1505d51a-c594-4fd8-be87-09be3542a0bb"
+            name="Parameters" />
+        </stereotypeInstanceHasPropertyInstances>
+      </propertyInstances>
+    </stereotypeInstance>
+  </appliedStereotypesInternal>
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="76111939-96e6-4204-9bd3-244f44493c68">
+      <profileInstance
+        Id="584551d8-6432-4328-8e77-c2d55fd55234"
+        name="CSharpProfile" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="ee96eb9c-7e3f-4d52-b6a7-f2ef05851212">
+      <profileInstance
+        Id="50f35ac9-96ec-4d47-9926-233006f15194"
+        name="TextTemplateBindings" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="4e350fcc-0a52-4ad4-aa39-84b544649250"
+        name="Date" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="2ca42cce-7791-4d83-befb-39db9e6750aa"
+        name="DateTime" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="5437d31f-8b8d-4d7e-8588-5967cb6510c0"
+        name="Administrator"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="21df4f86-56a2-4502-b49d-2814c5127aaf"
+            isDerived="false"
+            sourceEndRoleName="Administrator"
+            targetEndRoleName="Add Course"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="7fbdebe4-319d-4bdf-bac8-20123030d770"
+              LastKnownName="Add Course"
+              LastKnownLocation="GestDepModel.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="85f1e373-faed-4176-9cc2-365831500ac4"
+                  name="Administrator"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="21c674f5-750a-4a0d-ad16-7b1c85cded78"
+                  name="Add Course"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="c6246a76-838d-4d08-8496-bdc60f588695"
+            isDerived="false"
+            sourceEndRoleName="Administrator"
+            targetEndRoleName="Assign Monitor to Course"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="5c85ca90-96d8-4d36-a5af-3820b22f1a5f"
+              LastKnownName="Assign Monitor to Course"
+              LastKnownLocation="GestDepModel.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="81685391-0868-402c-b95d-907adcca0955"
+                  name="Administrator"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="06b7a824-86ea-42aa-80b6-95cdd181901a"
+                  name="Assign Monitor to Course"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="99930d7b-647c-4fb0-9f21-a57ae94f252d"
+        name="Employee"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="d99ca3db-82af-4e81-ba7e-10563245302b"
+            isDerived="false"
+            sourceEndRoleName="Employee"
+            targetEndRoleName="Add Enrollment"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="69b4a203-f3c3-47c7-a799-8865d3d5b921"
+              LastKnownName="Add Enrollment"
+              LastKnownLocation="GestDepModel.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="720fa675-95f9-4bda-a230-a47cd9d9cc18"
+                  name="Employee"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b7c7933c-3481-46da-a262-2390fdea344c"
+                  name="Add Enrollment"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="f6a17550-b591-4256-a6d6-c7182889de6d"
+            isDerived="false"
+            sourceEndRoleName="Employee"
+            targetEndRoleName="Add User"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="4dc58d5f-06c2-4b0d-9351-e069bfecf35e"
+              LastKnownName="Add User"
+              LastKnownLocation="GestDepModel.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c8588b61-c800-439d-b603-891e94e5ca0d"
+                  name="Employee"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="87379fd0-7866-48a1-ae5f-f898636f7dc4"
+                  name="Add User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="8d540e4e-78cf-42db-a84f-b98df01cea85"
+            isDerived="false"
+            sourceEndRoleName="Employee"
+            targetEndRoleName="List of Free Lanes"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="26227e68-7cee-4b3c-af8c-fff623ffc938"
+              LastKnownName="List of Free Lanes"
+              LastKnownLocation="GestDepModel.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="00865715-b40e-4ed9-adca-f0386973bf28"
+                  name="Employee"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9caf7e98-730e-4205-a2e5-81d022f3510c"
+                  name="List of Free Lanes"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="7fbdebe4-319d-4bdf-bac8-20123030d770"
+        name="Add Course"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="5c85ca90-96d8-4d36-a5af-3820b22f1a5f"
+        name="Assign Monitor to Course"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="69b4a203-f3c3-47c7-a799-8865d3d5b921"
+        name="Add Enrollment"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="4dc58d5f-06c2-4b0d-9351-e069bfecf35e"
+        name="Add User"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="6a4704c2-ed85-4217-81d2-35edc29cd279">
+            <useCaseMoniker
+              Id="69b4a203-f3c3-47c7-a799-8865d3d5b921"
+              LastKnownName="Add Enrollment"
+              LastKnownLocation="GestDepModel.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="26227e68-7cee-4b3c-af8c-fff623ffc938"
+        name="List of Free Lanes"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="8a6a29ef-c8fa-41be-a77b-d13caee78a35"
+        LastKnownName="GestDepLib.Entities"
+        LastKnownLocation="Package_1005.uml" />
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>

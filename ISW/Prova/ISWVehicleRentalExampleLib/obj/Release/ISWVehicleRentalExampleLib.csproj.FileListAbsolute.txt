@@ -1,0 +1,10 @@
+C:\Users\fjaen\Documents\Visual Studio 2015\Projects\ISWVehicleRentalExampleApp\ISWVehicleRentalExampleLib\bin\Release\ISWVehicleRentalExampleLib.dll.config
+C:\Users\fjaen\Documents\Visual Studio 2015\Projects\ISWVehicleRentalExampleApp\ISWVehicleRentalExampleLib\bin\Release\ISWVehicleRentalExampleLib.dll
+C:\Users\fjaen\Documents\Visual Studio 2015\Projects\ISWVehicleRentalExampleApp\ISWVehicleRentalExampleLib\bin\Release\ISWVehicleRentalExampleLib.pdb
+C:\Users\fjaen\Documents\Visual Studio 2015\Projects\ISWVehicleRentalExampleApp\ISWVehicleRentalExampleLib\bin\Release\EntityFramework.dll
+C:\Users\fjaen\Documents\Visual Studio 2015\Projects\ISWVehicleRentalExampleApp\ISWVehicleRentalExampleLib\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\fjaen\Documents\Visual Studio 2015\Projects\ISWVehicleRentalExampleApp\ISWVehicleRentalExampleLib\bin\Release\EntityFramework.xml
+C:\Users\fjaen\Documents\Visual Studio 2015\Projects\ISWVehicleRentalExampleApp\ISWVehicleRentalExampleLib\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\fjaen\Documents\Visual Studio 2015\Projects\ISWVehicleRentalExampleApp\ISWVehicleRentalExampleLib\obj\Release\ISWVehicleRentalExampleLib.dll
+C:\Users\fjaen\Documents\Visual Studio 2015\Projects\ISWVehicleRentalExampleApp\ISWVehicleRentalExampleLib\obj\Release\ISWVehicleRentalExampleLib.pdb
+C:\Users\fjaen\Documents\Visual Studio 2015\Projects\ISWVehicleRentalExampleApp\ISWVehicleRentalExampleLib\obj\Release\ISWVehicleRentalExampleLib.csprojResolveAssemblyReference.cache

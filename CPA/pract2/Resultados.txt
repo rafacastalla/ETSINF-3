@@ -1,0 +1,373 @@
+/*******************    divi    *******************/
+Los 10 enteros con más divisores hasta 100000 son:
+ 83160, con 128 divisores
+ 98280, con 128 divisores
+ 55440, con 120 divisores
+ 65520, con 120 divisores
+ 75600, con 120 divisores
+ 85680, con 120 divisores
+ 90720, con 120 divisores
+ 92400, con 120 divisores
+ 95760, con 120 divisores
+ 60480, con 112 divisores
+/********************************************************/
+
+/********************************************************/
+/       divi-e1.sh     Time on sequencial: 41.56011        /
+/********************************************************/
+
+
+  divi-e2-p3 no es pot paralelitzar
+
+  el millor bucle es el segon en una planificacio estatica
+ 
+divi-e2-p1 Static    Static1   Dynamic*    Guided
+------------------------------------------------
+2         30.48225  25.77254  19.58993  19.57444
+
+4         17.88133  12.90135   9.84399   9.81590
+
+8          9.58189   6.82279   5.26922   5.25899
+
+16         5.71771   4.04512   3.06395   3.12538
+
+32         3.60604   2.55361   1.91707   1.91553
+
+divi-e2-p2 Static*   Static1    Dynamic    Guided
+-------------------------------------------------
+2         20.84654  26.06225  322.48740  21.37712
+
+4         10.75871  13.34366  370.90972  11.36034
+
+8          6.06485   8.28698  364.21180   7.48703
+
+16         4.75958   5.49992  477.76997   8.34926
+
+32         4.36401   4.69187  603.31789  25.44611 <-- overhead???
+
+/********************************************************/
+/                       divi-e3                          /
+/********************************************************/
+
+Paralelizamos el bucle 1 (el que mas abarca) con una planificacion dynamic o guided.
+
+divi-e3     Dynamic*     Guided
+------------------------------
+
+2          21.76761   21.70528
+
+4          10.88212   10.90739
+
+8           5.83009    5.48057
+
+16          3.40480    3.40768
+
+32          1.90500    1.90340
+
+
+Salida terminal:
+
+Dynamic 32 cores
+
+Fil: 29 amb divisors trobats 33177 
+Fil: 3 amb divisors trobats 32975 
+Fil: 31 amb divisors trobats 33611 
+Fil: 2 amb divisors trobats 32540 
+Fil: 0 amb divisors trobats 33743 
+Fil: 11 amb divisors trobats 33555 
+Fil: 12 amb divisors trobats 33286 
+Fil: 16 amb divisors trobats 32708 
+Fil: 28 amb divisors trobats 32411 
+Fil: 8 amb divisors trobats 33017 
+Fil: 20 amb divisors trobats 33356 
+Fil: 17 amb divisors trobats 34425 
+Fil: 26 amb divisors trobats 33064 
+Fil: 25 amb divisors trobats 33331 
+Fil: 1 amb divisors trobats 33161 
+Fil: 21 amb divisors trobats 32716 
+Fil: 5 amb divisors trobats 33314 
+Fil: 18 amb divisors trobats 33401 
+Fil: 14 amb divisors trobats 33202 
+Fil: 6 amb divisors trobats 34714 
+Fil: 9 amb divisors trobats 33158 
+Fil: 30 amb divisors trobats 32502 
+Fil: 13 amb divisors trobats 32814 
+Fil: 23 amb divisors trobats 34450 
+Fil: 27 amb divisors trobats 34405 
+Fil: 7 amb divisors trobats 34424 
+Fil: 19 amb divisors trobats 32307 
+Fil: 4 amb divisors trobats 33392 
+Fil: 22 amb divisors trobats 33138 
+Fil: 24 amb divisors trobats 32857 
+Fil: 15 amb divisors trobats 33685 
+Fil: 10 amb divisors trobats 33911 
+Time on parallel: 1.90500
+Los 10 enteros con más divisores hasta 100000 son:
+ 83160, con 128 divisores
+ 98280, con 128 divisores
+ 55440, con 120 divisores
+ 65520, con 120 divisores
+ 75600, con 120 divisores
+ 85680, con 120 divisores
+ 90720, con 120 divisores
+ 92400, con 120 divisores
+ 95760, con 120 divisores
+ 60480, con 112 divisores
+[carherb2@kahan Pract2]$ 
+
+Dynamic 16 cores
+
+Fil: 10 amb divisors trobats 66543 
+Fil: 7 amb divisors trobats 66356 
+Fil: 11 amb divisors trobats 62049 
+Fil: 13 amb divisors trobats 66528 
+Fil: 1 amb divisors trobats 67535 
+Fil: 6 amb divisors trobats 67925 
+Fil: 4 amb divisors trobats 67589 
+Fil: 2 amb divisors trobats 68198 
+Fil: 5 amb divisors trobats 66772 
+Fil: 14 amb divisors trobats 67411 
+Fil: 9 amb divisors trobats 66663 
+Fil: 12 amb divisors trobats 67646 
+Fil: 8 amb divisors trobats 68298 
+Fil: 0 amb divisors trobats 67070 
+Fil: 3 amb divisors trobats 64305 
+Fil: 15 amb divisors trobats 65862 
+Time on parallel: 3.40480
+Los 10 enteros con más divisores hasta 100000 son:
+ 83160, con 128 divisores
+ 98280, con 128 divisores
+ 55440, con 120 divisores
+ 65520, con 120 divisores
+ 75600, con 120 divisores
+ 85680, con 120 divisores
+ 90720, con 120 divisores
+ 92400, con 120 divisores
+ 95760, con 120 divisores
+ 60480, con 112 divisores
+
+Dynamic 8 cores
+
+Fil: 0 amb divisors trobats 126604 
+Fil: 1 amb divisors trobats 142887 
+Fil: 4 amb divisors trobats 133235 
+Fil: 3 amb divisors trobats 122372 
+Fil: 5 amb divisors trobats 135173 
+Fil: 7 amb divisors trobats 131672 
+Fil: 6 amb divisors trobats 140542 
+Fil: 2 amb divisors trobats 134265 
+Time on parallel: 5.83009
+Los 10 enteros con más divisores hasta 100000 son:
+ 83160, con 128 divisores
+ 98280, con 128 divisores
+ 55440, con 120 divisores
+ 65520, con 120 divisores
+ 75600, con 120 divisores
+ 85680, con 120 divisores
+ 90720, con 120 divisores
+ 92400, con 120 divisores
+ 95760, con 120 divisores
+ 60480, con 112 divisores
+
+Dynamic 4 cores
+
+Fil: 1 amb divisors trobats 270148 
+Fil: 3 amb divisors trobats 270762 
+Fil: 0 amb divisors trobats 267313 
+Fil: 2 amb divisors trobats 258527 
+Time on parallel: 10.88212
+Los 10 enteros con más divisores hasta 100000 son:
+ 83160, con 128 divisores
+ 98280, con 128 divisores
+ 55440, con 120 divisores
+ 65520, con 120 divisores
+ 75600, con 120 divisores
+ 85680, con 120 divisores
+ 90720, con 120 divisores
+ 92400, con 120 divisores
+ 95760, con 120 divisores
+ 60480, con 112 divisores
+
+Dynamic 2 cores
+
+Fil: 1 amb divisors trobats 534049 
+Fil: 0 amb divisors trobats 532701 
+Time on parallel: 21.76761
+Los 10 enteros con más divisores hasta 100000 son:
+ 83160, con 128 divisores
+ 98280, con 128 divisores
+ 55440, con 120 divisores
+ 65520, con 120 divisores
+ 75600, con 120 divisores
+ 85680, con 120 divisores
+ 90720, con 120 divisores
+ 92400, con 120 divisores
+ 95760, con 120 divisores
+ 60480, con 112 divisores
+
+-----------------------------------------------
+Guided 32 cores
+
+Fil: 13 amb divisors trobats 46506 
+Fil: 8 amb divisors trobats 31015 
+Fil: 7 amb divisors trobats 40390 
+Fil: 26 amb divisors trobats 32633 
+Fil: 17 amb divisors trobats 45436 
+Fil: 29 amb divisors trobats 44217 
+Fil: 9 amb divisors trobats 30086 
+Fil: 15 amb divisors trobats 27058 
+Fil: 3 amb divisors trobats 31862 
+Fil: 14 amb divisors trobats 33724 
+Fil: 22 amb divisors trobats 29320 
+Fil: 18 amb divisors trobats 28671 
+Fil: 2 amb divisors trobats 28047 
+Fil: 10 amb divisors trobats 35790 
+Fil: 11 amb divisors trobats 41768 
+Fil: 21 amb divisors trobats 24632 
+Fil: 6 amb divisors trobats 47271 
+Fil: 1 amb divisors trobats 45605 
+Fil: 16 amb divisors trobats 25555 
+Fil: 4 amb divisors trobats 26027 
+Fil: 30 amb divisors trobats 39165 
+Fil: 12 amb divisors trobats 24734 
+Fil: 5 amb divisors trobats 25302 
+Fil: 27 amb divisors trobats 34765 
+Fil: 31 amb divisors trobats 36863 
+Fil: 23 amb divisors trobats 26556 
+Fil: 25 amb divisors trobats 42991 
+Fil: 24 amb divisors trobats 37908 
+Fil: 28 amb divisors trobats 24643 
+Fil: 20 amb divisors trobats 25756 
+Fil: 0 amb divisors trobats 24931 
+Fil: 19 amb divisors trobats 27523 
+Time on parallel: 1.90340
+Los 10 enteros con más divisores hasta 100000 son:
+ 83160, con 128 divisores
+ 98280, con 128 divisores
+ 55440, con 120 divisores
+ 65520, con 120 divisores
+ 75600, con 120 divisores
+ 85680, con 120 divisores
+ 90720, con 120 divisores
+ 92400, con 120 divisores
+ 95760, con 120 divisores
+ 60480, con 112 divisores
+
+Guided 16 cores
+
+Fil: 10 amb divisors trobats 59489 
+Fil: 3 amb divisors trobats 52349 
+Fil: 1 amb divisors trobats 73294 
+Fil: 11 amb divisors trobats 51168 
+Fil: 2 amb divisors trobats 78219 
+Fil: 14 amb divisors trobats 68201 
+Fil: 6 amb divisors trobats 56768 
+Fil: 9 amb divisors trobats 95516 
+Fil: 15 amb divisors trobats 63304 
+Fil: 5 amb divisors trobats 95262 
+Fil: 0 amb divisors trobats 48631 
+Fil: 13 amb divisors trobats 89173 
+Fil: 12 amb divisors trobats 49247 
+Fil: 4 amb divisors trobats 83242 
+Fil: 8 amb divisors trobats 48380 
+Fil: 7 amb divisors trobats 54507 
+Time on parallel: 3.40768
+Los 10 enteros con más divisores hasta 100000 son:
+ 83160, con 128 divisores
+ 98280, con 128 divisores
+ 55440, con 120 divisores
+ 65520, con 120 divisores
+ 75600, con 120 divisores
+ 85680, con 120 divisores
+ 90720, con 120 divisores
+ 92400, con 120 divisores
+ 95760, con 120 divisores
+ 60480, con 112 divisores
+
+Guided 8 cores
+
+Fil: 2 amb divisors trobats 115335 
+Fil: 1 amb divisors trobats 194816 
+Fil: 0 amb divisors trobats 97434 
+Fil: 7 amb divisors trobats 105299 
+Fil: 4 amb divisors trobats 150808 
+Fil: 5 amb divisors trobats 174247 
+Fil: 6 amb divisors trobats 99282 
+Fil: 3 amb divisors trobats 129529 
+Time on parallel: 5.48057
+Los 10 enteros con más divisores hasta 100000 son:
+ 83160, con 128 divisores
+ 98280, con 128 divisores
+ 55440, con 120 divisores
+ 65520, con 120 divisores
+ 75600, con 120 divisores
+ 85680, con 120 divisores
+ 90720, con 120 divisores
+ 92400, con 120 divisores
+ 95760, con 120 divisores
+ 60480, con 112 divisores
+
+Guided 4 cores
+
+Fil: 1 amb divisors trobats 280899 
+Fil: 0 amb divisors trobats 372484 
+Fil: 3 amb divisors trobats 196136 
+Fil: 2 amb divisors trobats 217231 
+Time on parallel: 10.90739
+Los 10 enteros con más divisores hasta 100000 son:
+ 83160, con 128 divisores
+ 98280, con 128 divisores
+ 55440, con 120 divisores
+ 65520, con 120 divisores
+ 75600, con 120 divisores
+ 85680, con 120 divisores
+ 90720, con 120 divisores
+ 92400, con 120 divisores
+ 95760, con 120 divisores
+ 60480, con 112 divisores
+
+Guided 2 cores
+
+Fil: 1 amb divisors trobats 398653 
+Fil: 0 amb divisors trobats 668097 
+Time on parallel: 21.70528
+Los 10 enteros con más divisores hasta 100000 son:
+ 83160, con 128 divisores
+ 98280, con 128 divisores
+ 55440, con 120 divisores
+ 65520, con 120 divisores
+ 75600, con 120 divisores
+ 85680, con 120 divisores
+ 90720, con 120 divisores
+ 92400, con 120 divisores
+ 95760, con 120 divisores
+ 60480, con 112 divisores
+
+/********************************************************/
+/                         div-e4                         /
+/********************************************************/
+
+Paralelizamos el bucle 2 (el que ) repartiendo nosotros la carga de trabajo.
+Hemos elegido este bucle porque para una planificacion estatica es el mas eficiente, y al
+repartir nosotros la carga de trabajo solo podemos usar una planificacion estatica.
+De esta forma hemos repartido la carga de trabajo en tantos rangos contiguos como hilos tenemos,
+es decir suponiendo que tenemos N hilos y 100 iteraciones, cada uno de ellos realizara
+N/100 iteraciones contiguas, ya que en el ejercicio 2 hemos obsevado que esta es la 
+planificacion estatica que mejor funciona.
+
+Cores           2         4        8       16       32
+
+divi-e4  19.57784   9.77953  5.16829  3.05622  1.89710
+
+Time on parallel: 1.89710
+Los 10 enteros con más divisores hasta 100000 son:
+ 83160, con 128 divisores
+ 98280, con 128 divisores
+ 55440, con 120 divisores
+ 65520, con 120 divisores
+ 75600, con 120 divisores
+ 85680, con 120 divisores
+ 90720, con 120 divisores
+ 92400, con 120 divisores
+ 95760, con 120 divisores
+ 60480, con 112 divisores

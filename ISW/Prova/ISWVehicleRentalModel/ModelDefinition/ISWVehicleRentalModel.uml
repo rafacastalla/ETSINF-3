@@ -1,0 +1,509 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel"
+  dslVersion="1.0.0.0"
+  Id="0cc65975-f2c7-4287-b387-7a76a692d34c"
+  name="ISWVehicleRentalModel" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <ownedCommentsInternal>
+    <comment
+      Id="dea12366-fe5e-44ef-ae88-53850b5bcdde">
+      <body>Clase por defecto que crea 
+VS. Punto de entrada "main"</body>
+    </comment>
+    <comment
+      Id="c33bd31b-7222-4f2f-81e0-6dfc1535fa44">
+      <body>...
+Lista no completa de formularios</body>
+    </comment>
+  </ownedCommentsInternal>
+  <appliedStereotypesInternal>
+    <stereotypeInstance
+      Id="30cc2288-8930-4d08-87d6-0d4ebe46bf67"
+      name="namespace"
+      profile="CSharpProfile">
+      <propertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="57b0c973-fd7c-43bb-aade-86de9ae70721">
+          <propertyInstance
+            Id="409eecea-a5cd-4266-82c6-acc56d5594e0"
+            name="BaseName" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="4e0b49ef-8c99-48d9-8c45-9485f8211ef3">
+          <propertyInstance
+            Id="f1839818-c2d6-4e09-b5eb-6e52f379f1a6"
+            name="ClrAttributes" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="361b17a9-022d-4060-beae-004bf8defb57">
+          <propertyInstance
+            Id="368b427d-c516-4fbf-bb20-c30de1643f45"
+            name="Usings" />
+        </stereotypeInstanceHasPropertyInstances>
+      </propertyInstances>
+    </stereotypeInstance>
+    <stereotypeInstance
+      Id="891f7ee5-e2b8-4535-b4d5-9046c99dc91c"
+      name="TextTemplateBindings"
+      profile="TextTemplateBindings">
+      <propertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="035e3950-dbfe-48b2-9e2a-f9c95cc1c94e">
+          <propertyInstance
+            Id="d19aa021-00c3-4714-bf23-8bd8b3ba189d"
+            name="Alias"
+            value="ClassTemplate|EnumTemplate|InterfaceTemplate|StructTemplate" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="07da9a23-8a69-4c93-b348-60efbf652538">
+          <propertyInstance
+            Id="beaf52c9-2f05-4f86-924f-ace90ed16756"
+            name="TemplateFilePath"
+            value="ClassTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4|EnumTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\EnumTemplate.t4|InterfaceTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\InterfaceTemplate.t4|StructTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="bcf1ca1c-25da-4d7a-92c4-fe88065bfccb">
+          <propertyInstance
+            Id="6e720fdc-871c-4760-9c50-7b1f6db9a059"
+            name="ProjectPath"
+            value="ClassTemplate=..\ISWVehicleRentalModelLib\ISWVehicleRentalModelLib.csproj|EnumTemplate=..\ISWVehicleRentalModelLib\ISWVehicleRentalModelLib.csproj|InterfaceTemplate=..\ISWVehicleRentalModelLib\ISWVehicleRentalModelLib.csproj|StructTemplate=..\ISWVehicleRentalModelLib\ISWVehicleRentalModelLib.csproj" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="85539723-d2b9-4ac9-be02-91c740c7281c">
+          <propertyInstance
+            Id="fe21f545-004c-49a5-89dc-6b482a4d4534"
+            name="TargetDirectory"
+            value="ClassTemplate=GeneratedCode\{PackageStructure}|EnumTemplate=GeneratedCode\{PackageStructure}|InterfaceTemplate=GeneratedCode\{PackageStructure}|StructTemplate=GeneratedCode\{PackageStructure}" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="fc2a3474-29b5-4693-804c-4aeb17148d65">
+          <propertyInstance
+            Id="1efc183e-55fc-4652-8c1c-80d64b3df07d"
+            name="TargetName"
+            value="ClassTemplate={Name}|EnumTemplate={Name}|InterfaceTemplate={Name}|StructTemplate={Name}" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="c4faa825-9cb3-45a8-9c5a-958f90717c6d">
+          <propertyInstance
+            Id="ba435bf4-174a-4725-b325-0b05465bbcb0"
+            name="Overwrite"
+            value="ClassTemplate=True|EnumTemplate=True|InterfaceTemplate=True|StructTemplate=True" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="69196211-b7e9-4c25-af2a-88e649c68e4f">
+          <propertyInstance
+            Id="49838dbd-170f-4661-bd69-f175a1b79b2f"
+            name="Parameters" />
+        </stereotypeInstanceHasPropertyInstances>
+      </propertyInstances>
+    </stereotypeInstance>
+  </appliedStereotypesInternal>
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="bfc30943-0a19-47af-84e7-196277f1ae36">
+      <profileInstance
+        Id="3385c8bd-ee88-4512-9026-2c995f043f00"
+        name="CSharpProfile" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="0ba0fc64-4c48-42b1-89aa-d51b6ebf4f35">
+      <profileInstance
+        Id="9f418cb5-7a54-483c-8c08-2c064c62acd4"
+        name="TextTemplateBindings" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="80d9f875-b289-4f1f-a741-81459a68933b"
+        name="DateTime" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="9ba43ecc-cd2c-401f-a63b-ab2e78e04dc0"
+        LastKnownName="Entities"
+        LastKnownLocation="Package_1855.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="c9e9157c-b131-45e7-a94f-7b1b59297534"
+        name="Employee"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="7430b617-d6e9-49b2-b529-aeae4291338e"
+            isDerived="false"
+            sourceEndRoleName="Employee"
+            targetEndRoleName="Add New Reservation"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="a29ff4f1-f162-4c61-afff-9f86c300a317"
+              LastKnownName="Add New Reservation"
+              LastKnownLocation="ISWVehicleRentalModel.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2f90ae79-4954-47b1-b826-447ed2a5fcd3"
+                  name="Employee"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2f36ad58-23b3-4f6f-96b4-28efdb48b141"
+                  name="Add New Reservation"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="9045dc97-dc8e-4367-b29c-2f74546fb3bc"
+            isDerived="false"
+            sourceEndRoleName="Employee"
+            targetEndRoleName="List Customer Reservations"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="074f9ca3-6c24-45b1-beca-b1abb7161718"
+              LastKnownName="List Customer Reservations"
+              LastKnownLocation="ISWVehicleRentalModel.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e45691c8-b1e7-4eb3-bf9f-6a4325d4fed9"
+                  name="Employee"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="df798b2f-57fc-46a0-81a4-e728215d8779"
+                  name="List Customer Reservations"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="80b03bb7-b0b3-4813-b7ea-1d0aa486942a"
+            isDerived="false"
+            sourceEndRoleName="Employee"
+            targetEndRoleName="List Co-Drivers"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="6b742f72-d28b-4fb2-9ffd-580d678032e5"
+              LastKnownName="List Co-Drivers"
+              LastKnownLocation="ISWVehicleRentalModel.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="422df36b-4b01-4a03-ae3c-a426c9a2801d"
+                  name="Employee"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e1373d3e-3d08-420c-95f9-2e6b1580388d"
+                  name="List Co-Drivers"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="a29ff4f1-f162-4c61-afff-9f86c300a317"
+        name="Add New Reservation"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="4f781631-c26d-4188-964d-c9743082c9a0">
+            <useCaseMoniker
+              Id="90a4c2f7-f038-4ec9-b8b3-65a1437c6337"
+              LastKnownName="Search Customers"
+              LastKnownLocation="ISWVehicleRentalModel.uml" />
+          </include>
+          <include
+            Id="6df31b3f-632b-423a-8f4c-fbd9d84d2a88">
+            <useCaseMoniker
+              Id="bc5aa7e2-bcb8-47a9-b269-979b21c9f0ac"
+              LastKnownName="Search Drivers"
+              LastKnownLocation="ISWVehicleRentalModel.uml" />
+          </include>
+          <include
+            Id="17704453-37d3-4bca-83a1-f2e9c3ec0bdd">
+            <useCaseMoniker
+              Id="11e1079c-2aba-4b3c-b94d-7ef569119380"
+              LastKnownName="Search Offices"
+              LastKnownLocation="ISWVehicleRentalModel.uml" />
+          </include>
+          <include
+            Id="cbd6d5f4-7a70-4200-9f5a-b9588f22286a">
+            <useCaseMoniker
+              Id="8c875b94-4485-45a0-9093-fa99febc1345"
+              LastKnownName="Search Categories"
+              LastKnownLocation="ISWVehicleRentalModel.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="90a4c2f7-f038-4ec9-b8b3-65a1437c6337"
+        name="Search Customers"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="f4319bc4-ece6-49b1-a1a5-845a347f4276"
+        name="Add New Customer"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="6225809d-be01-432d-8468-ad004acc71e7">
+            <useCaseMoniker
+              Id="a29ff4f1-f162-4c61-afff-9f86c300a317"
+              LastKnownName="Add New Reservation"
+              LastKnownLocation="ISWVehicleRentalModel.uml" />
+          </extend>
+        </extendedCases>
+        <additions>
+          <include
+            Id="751d9e46-1584-4cfb-ae26-c0518a60094a">
+            <useCaseMoniker
+              Id="cfe2183f-89f8-41d7-a911-711602cb1c57"
+              LastKnownName="Add New Card"
+              LastKnownLocation="ISWVehicleRentalModel.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="bc5aa7e2-bcb8-47a9-b269-979b21c9f0ac"
+        name="Search Drivers"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="0fd8163d-19c7-4c04-8e4c-fd938b34fc10"
+        name="Add New Driver"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="a8928daa-ae6e-43b8-b3d0-d6f1262c96d4">
+            <useCaseMoniker
+              Id="a29ff4f1-f162-4c61-afff-9f86c300a317"
+              LastKnownName="Add New Reservation"
+              LastKnownLocation="ISWVehicleRentalModel.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="dda4b2e7-9202-4c9f-9c9c-ef4e52b3178c"
+        name="Search Offices"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="11e1079c-2aba-4b3c-b94d-7ef569119380"
+        name="Search Offices"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="8c875b94-4485-45a0-9093-fa99febc1345"
+        name="Search Categories"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="074f9ca3-6c24-45b1-beca-b1abb7161718"
+        name="List Customer Reservations"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="42bd4d69-bd0b-4393-8c77-940e5ff451b9">
+            <useCaseMoniker
+              Id="3a614af2-8064-4f42-8a8f-8fa0dbcb5fa2"
+              LastKnownName="Search Customers"
+              LastKnownLocation="ISWVehicleRentalModel.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="c3fb6625-9f30-48c9-a1c2-468aeda09512"
+        name="."
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="3a614af2-8064-4f42-8a8f-8fa0dbcb5fa2"
+        name="Search Customers"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="39a83d4e-a9ad-4a05-943c-2a5b8df582e7"
+        name="Search Reservations"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="6b742f72-d28b-4fb2-9ffd-580d678032e5"
+        name="List Co-Drivers"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="31a725ad-dd80-406e-a287-461e043bbfe6">
+            <useCaseMoniker
+              Id="29ee5eed-3874-49ff-a5ed-4a237e6657cf"
+              LastKnownName="Search Persons"
+              LastKnownLocation="ISWVehicleRentalModel.uml" />
+          </include>
+          <include
+            Id="f63b9525-7aac-4e67-bff7-c25d1084aa4d">
+            <useCaseMoniker
+              Id="259fd92f-ec22-4b42-a3a0-f4dbfa042cdb"
+              LastKnownName="Search Reservations"
+              LastKnownLocation="ISWVehicleRentalModel.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="29ee5eed-3874-49ff-a5ed-4a237e6657cf"
+        name="Search Persons"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="cfe2183f-89f8-41d7-a911-711602cb1c57"
+        name="Add New Card"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="259fd92f-ec22-4b42-a3a0-f4dbfa042cdb"
+        name="Search Reservations"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="56743152-8297-4e2a-8647-1b9c0ec3a7d9"
+        LastKnownName="Presentation"
+        LastKnownLocation="Package_1255.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="17cd0896-58e0-4461-85a5-ba1dbcf1452c"
+        LastKnownName="BusinessLogic"
+        LastKnownLocation="Package_1257.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="f097601a-e3a0-4f86-bbda-0da368979ae2"
+        LastKnownName="Persistence"
+        LastKnownLocation="Package_1258.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="0b874579-5629-4366-b6dc-9a4866d944e0"
+        LastKnownName="Entities"
+        LastKnownLocation="Package_1302.uml" />
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>

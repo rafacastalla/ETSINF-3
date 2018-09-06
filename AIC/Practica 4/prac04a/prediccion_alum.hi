@@ -1,0 +1,4 @@
+/* prediccion_alum.c */
+void inicializa_prediccion_alum(void);
+boolean obtener_prediccion_alum(word PC, ciclo_t orden, boolean *prediccion, dword *destino);
+void actualizar_prediccion_alum(word PC, ciclo_t orden, boolean condicion, dword destino);

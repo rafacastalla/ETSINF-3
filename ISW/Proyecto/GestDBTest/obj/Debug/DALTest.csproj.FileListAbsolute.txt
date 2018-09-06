@@ -1,0 +1,12 @@
+D:\Workspace\ISW\Visual Studio 2015\GestDep_ISW_2017\DALTest\bin\Debug\DALTest.exe.config
+D:\Workspace\ISW\Visual Studio 2015\GestDep_ISW_2017\DALTest\bin\Debug\DALTest.exe
+D:\Workspace\ISW\Visual Studio 2015\GestDep_ISW_2017\DALTest\bin\Debug\DALTest.pdb
+D:\Workspace\ISW\Visual Studio 2015\GestDep_ISW_2017\DALTest\bin\Debug\EntityFramework.dll
+D:\Workspace\ISW\Visual Studio 2015\GestDep_ISW_2017\DALTest\bin\Debug\EntityFramework.SqlServer.dll
+D:\Workspace\ISW\Visual Studio 2015\GestDep_ISW_2017\DALTest\bin\Debug\GestDepLib.dll
+D:\Workspace\ISW\Visual Studio 2015\GestDep_ISW_2017\DALTest\bin\Debug\GestDepLib.pdb
+D:\Workspace\ISW\Visual Studio 2015\GestDep_ISW_2017\DALTest\bin\Debug\EntityFramework.xml
+D:\Workspace\ISW\Visual Studio 2015\GestDep_ISW_2017\DALTest\bin\Debug\EntityFramework.SqlServer.xml
+D:\Workspace\ISW\Visual Studio 2015\GestDep_ISW_2017\DALTest\obj\Debug\DALTest.csprojResolveAssemblyReference.cache
+D:\Workspace\ISW\Visual Studio 2015\GestDep_ISW_2017\DALTest\obj\Debug\DALTest.exe
+D:\Workspace\ISW\Visual Studio 2015\GestDep_ISW_2017\DALTest\obj\Debug\DALTest.pdb

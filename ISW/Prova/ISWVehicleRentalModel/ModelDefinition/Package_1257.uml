@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel"
+  dslVersion="1.0.0.0"
+  Id="17cd0896-58e0-4461-85a5-ba1dbcf1452c"
+  name="BusinessLogic" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <suppliersInternal>
+    <dependency
+      Id="e1f91f38-de9f-43ab-99ff-7c7b3afdc836">
+      <packageMoniker
+        Id="f097601a-e3a0-4f86-bbda-0da368979ae2"
+        LastKnownName="Persistence"
+        LastKnownLocation="Package_1258.uml" />
+    </dependency>
+  </suppliersInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="f1b40cac-2e31-4369-bb85-151dcd9c4a39"
+        name="ISWVehicleRentalBusinessController"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="083284e8-4a89-43bf-9239-b890c076acbd"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName="ISWVehicleRentalDAL"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="0e45cf29-aef5-4a43-a7b2-1af2ca8c4c13"
+              LastKnownName="ISWVehicleRentalDAL"
+              LastKnownLocation="Package_1258.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d3ec5ea9-ad34-414f-9083-7c7fd7e76ada"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Composite"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="6092ab76-7fc7-441e-9afd-06241b27fede"
+                  name="ISWVehicleRentalDAL"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="true" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="77f44f4e-9530-44ad-864f-7da9335e24f5"
+        LastKnownName="Entities"
+        LastKnownLocation="Package_1919.uml" />
+    </packageHasNamedElement>
+  </packagedElements>
+</package>
