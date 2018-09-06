@@ -1,0 +1,11 @@
+%Sacar_Minimos(y,u,na,nb,d, H)
+Sacar_Minimos(Vel2,u2,1,1,1, 7)
+Sacar_Minimos(Vel2,u2,2,1,1, 7)
+Sacar_Minimos(Vel2,u2,2,2,1, 7)
+Sacar_Minimos(Vel2,u2,3,3,1, 7)
+
+
+Comprobar_modelo([-0.9596],[0.0359],0.01)
+Comprobar_modelo([-1.3459, 0.3805],[0.0117,0.0190],0.01)
+
+   

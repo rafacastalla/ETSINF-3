@@ -1,0 +1,75 @@
+%**********************************************************
+% OBTENCION SALIDA DE UN MODELO
+%**********************************************************
+
+%**********************************************************
+%  PERIODO DE MUESTREO T
+T= 1;
+
+%caso 1%
+
+a = -0.84168;
+b = 0.59471;
+
+%caso 2
+
+% a = -0.9999961;
+ a2 =  0.3400122;
+% b = 0.5300947;
+ b2 =  0.4500052;
+
+%caso 3 
+% 
+% a = -0.6432865;
+% a2 = -0.0046013;
+ a3 = -0.0046013;
+% b = 0.4881083;
+% b2 = 0.5613939;
+ b3 = 0.5613939;
+na=
+nb=
+ 
+%Formula 
+%Res=(inv(F'*F))*F'*Y
+
+%**********************************************************
+
+%Inicializar Variables
+MUEST=50; y=[]; error=[]; u=[]; t=[];
+
+% Fijando una entrada al modelo Escalon 1
+u=ones(1,MUEST+1)*2;
+
+
+%Bucle de Generación de Datos
+for i=1:MUEST+1
+    
+    % Almacenar valor del instante actual
+    t(i)=((i-1)*T);
+    
+    %Calculo Salida Bucle Abierto caso 1
+    if (i==1) y(i)=0;
+    else y(i)=-a*y(i-1)+b*u(i-1);
+    end;
+   
+    %Calculo Salida Bucle Abierto caso 2
+     if (i==1) y(i)=0;
+     elseif (i==2) y(i)=-a*y(i-1)+b*u(i-1);
+     else y(i)=-a*y(i-1)-a2*y(i-2)+b*u(i-1)+b2*u(i-2);
+     end;
+
+%Calculo Salida Bucle Abierto caso 2
+     if(i==1) y(i)=0;
+     elseif (i==2) y(i)=-a*y(i-1)+b*u(i-1);
+     elseif (i==3) y(i)=-a*y(i-1)-a2*y(i-2)+b*u(i-1)+b2*u(i-2);
+     else y(i)=-a*y(i-1)-a2*y(i-2)-a3*y(i-3)+b*u(i-1)+b2*u(i-2)+b3*u(i-3);
+     end;
+%     
+       
+end;
+
+% Almacenar datos en un fichero de texto
+t=t'; y=y'; u=u';
+
+figure;
+plot(t,y);

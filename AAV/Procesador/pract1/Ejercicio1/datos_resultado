@@ -1,0 +1,54 @@
+#test-args.i386
+
+0.7473
+0.6183
+0.7544
+
+#Informacion de puntos de una linea
+  #cola de instrucciones  diferente 4
+[ipc valor]
+0.6292 #banco de registros fısico diferente 32
+0.6483 #banco de registros fısico diferente 36
+0.643
+0.6788
+0.6501
+0.7155
+0.6514
+
+#cola de instrucciones  diferente 8
+0.7501
+0.6471
+0.7591
+
+#cola de instrucciones  diferente 32
+0.6754
+0.6483
+0.7025
+0.6788
+0.7225
+0.7155
+0.7269
+
+Cuestion 1:
+
+La primera load empieza en el 284 y termina en el 571 porque como es la primera vez que carga falla en L1, L2, L3 y llega a MP, si no fuese simulado los ciclos serian mayores ya que tendriamos que acceder a disco duro y este tardara mucho mas.
+
+Cuestion 2:
+
+La instruccion de salto numero 55 acierta la prediccion ya que las siguientes instrucciones no se cancelan despues del commit.
+
+Cuestion 3:
+
+Esta es la primera instruccion que falla la prediccion
+079 branch zps/- Di  ... ... ... ... ... ... I   Wb  C
+
+075 load addr/data                                                                Di  ... ... I   ... ... Wb  C  
+ 076 move data/eax                                                                     Di  ... ... ... ... I   Wb  C  
+ 077 add edx/edx,zps,cf,of                                                             Di  I   ... Wb  ... ... ... C  
+ 078 and eax,eax/zps,cf,of                                                             Di  ... ... ... ... ... I   Wb  C  
+ 079 branch zps/-                                                                      Di  ... ... ... ... ... ... I   Wb  C  
+ 080 move edx/eax                                                                          Di  ... I   Wb  ... ... ... ...X
+ 081 call -/-            
+ 
+ Cuestion 4:
+ No comienza en el ciclo 1 porque hay que traer las instrucciones de MP

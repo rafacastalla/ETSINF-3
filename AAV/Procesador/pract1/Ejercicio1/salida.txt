@@ -1,0 +1,2 @@
+number of arguments: 1
+	argv[0] = test-args.i386

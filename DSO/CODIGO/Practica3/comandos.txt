@@ -1,0 +1,4 @@
+crar el ficher per a parlar amb el dispositiu, es un ficher especial de caracters amb major number 55
+sudo mknod /dev/practica c 55 1
+
+ 

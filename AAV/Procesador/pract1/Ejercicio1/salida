@@ -1,0 +1,97 @@
+
+Multi2Sim 3.0.1 - Multicore Multithreaded Processor Simulator
+Last compilation: Feb 16 2018 09:42:31
+
+option                    value        # description
+------------------------------------------------------------
+-title                                 # Simulation title
+-config                                # Processor configuration file
+-ctxconfig                             # Context configuration file
+-max_cycles                          0 # Cycle to stop program (0=no stop)
+-max_inst                            0 # Max number of retireed instructions (0=no max)
+-max_time                            0 # Max running time (in seconds)
+-fastfwd                             0 # Cycles to run with fast simulation
+-debug:ctx                             # Debug information for context creation & status updates
+-debug:syscall                         # Debug information for system calls
+-debug:opencl                          # Debug information for OpenCL programs
+-debug:loader                          # Debug information from program loader
+-debug:call                            # Debug information about procedure calls
+-debug:inst                            # Debug information about executed instructions
+-debug:cache                           # Debug information for cache system
+-debug:pipeline                        # Debug information for pipeline
+-debug:error                           # Debug information after errors
+-report:pipeline                       # Report for pipeline statistics
+-report:cache                          # Report for cache system
+-opencl:binary                         # Pre-compiled binary for OpenCL applications
+-cores                               1 # number of processor cores
+-threads                             1 # number of threads per core
+-context_switch                      t # allow context switches and scheduling
+-context_quantum                100000 # quantum for a context before context switch
+-stage_time_stats                    f # measure time for stages
+-occupancy_stats                     f # include occupancy stats in the pipeline report
+-recover_kind                writeback # when to recover {writeback|commit}
+-recover_penalty                     0 # cycles to stall fetch after recover
+-thread_quantum                   1000 # thread quantum in cycles for switch-on-event fetch
+-thread_switch_penalty               0 # for switch-on-event fetch
+-fetch_kind                  timeslice # fetch policy {shared|timeslice|switchonevent}
+-decode_width                        4 # decode width
+-dispatch_kind               timeslice # dispatch stage sharing {shared|timeslice}
+-dispatch_width                      4 # dispatch width (for shared/timeslice dispatch)
+-issue_kind                  timeslice # issue stage sharing {shared|timeslice}
+-issue_width                         4 # issue width (for shared/timeslice issue)
+-commit_kind                    shared # commit stage sharing {shared|timeslice}
+-commit_width                        4 # commit depth (in instr/thread/cycle)
+-bpred                        twolevel # Branch predictor kind {perfect|taken|nottaken|bimod|twolevel|comb}
+-bpred:btb                       256:4 # BTB configuration (<sets>:<assoc>)
+-bpred:ras                          32 # Return address stack size
+-bpred:bimod                      1024 # Number of entries for bimodal predictor
+-bpred:twolevel               1 1024 8 # Two-level adaptive (<l1size> <l2size> <hist_size>)
+-bpred:choice                     1024 # Number of entries for choice predictor
+-tcache                              f # Use trace cache {t|f}
+-tcache:topo                      64:4 # Trace cache topology (<sets>:<assoc>)
+-tcache:trace_size                  16 # Maximum number of uops in a trace
+-tcache:branch_max                   3 # Maximum number of branches in a trace
+-tcache:queue_size                  32 # Fetch queue for predecoded uops
+-fetchq_size                        64 # fetch queue size in bytes
+-uopq_size                          32 # uop queue size in microinstructions
+-rob_kind                      private # reorder buffer sharing {private|shared}
+-rob_size                           64 # reorder buffer size per thread
+-rf_kind                       private # physical register file {shared|private}
+-rf_int_size                        80 # integer physical register file size per thread
+-rf_fp_size                         40 # floating-point physical register file size per thread
+-iq_kind                       private # instruction queue kind {shared|private}
+-iq_size                            40 # instruction queue size per thread
+-lsq_kind                      private # load/store queue kind {shared|private}
+-lsq_size                           20 # load/store queue size per thread
+-fu:intadd                       4 2 1 # Integer Adder (count, oplat, issuelat)
+-fu:intsub                       4 2 1 # Integer Subtracter
+-fu:intmult                      1 3 1 # Integer Multiplier
+-fu:intdiv                     1 20 19 # Integer Divider
+-fu:effaddr                      4 2 1 # Effective Address
+-fu:logical                      4 1 1 # Logical Operations
+-fu:fpsimple                     2 2 2 # Floating-point simple operator
+-fu:fpadd                        2 5 5 # Floating-pointer adder
+-fu:fpcomp                       2 5 5 # Floating-point comparator
+-fu:fpmult                     1 10 10 # Floating-point multiplier
+-fu:fpdiv                      1 20 20 # Floating-point divider
+-fu:fpcomplex                  1 40 40 # Floating-point complex operator
+-cacheconfig                           # Cache configuration file
+-iperfect                            f # Perfect instruction cache {t|f}
+-dperfect                            f # Perfect data cache {t|f}
+-page_size                        4096 # Memory page size
+
+
+sim.cycles  77613  # Simulation cycles
+sim.inst  15183  # Total committed instructions
+sim.ipc  0.1956  # Global IPC
+sim.predacc  0.757  # Branch prediction accuracy
+sim.time  0.1  # Simulation time in seconds
+sim.cps  766261  # Cycles simulated per second
+sim.contexts  1  # Maximum number of contexts running concurrently
+sim.memory  10080256  # Physical memory used by benchmarks
+sim.memory_max  10080256  # Maximum physical memory used by benchmarks
+dl1-0.hitratio  0.9583  # Cache hit ratio
+l2-0.hitratio  0.0810  # Cache hit ratio
+il1-0.hitratio  0.8572  # Cache hit ratio
+dtlb.0.0.hitratio  0.995  # TLB hit ratio
+

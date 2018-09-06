@@ -1,0 +1,13 @@
+-cores 2
+
+-decode_width 2   -dispatch_width 2   -issue_width 2 -commit_width 2
+-fu:intadd 4 1 1  -fu:intsub 4 1 1    -fu:intmult  1 1 1 -fu:intdiv 1 1 1
+-fu:effaddr 4 1 1 -fu:logical 4 1 1   -fu:fpsimple 2 1 1 -fu:fpadd 2 1 1
+-fu:fpcomp 2 1 1  -fu:fpmult 1 1 1    -fu:fpdiv    1 1 1 -fu:fpcomplex 1 1 1
+-bpred perfect
+-lsq_size 128
+-iq_size 128
+-rob_size 128
+-rf_int_size 160
+-rf_fp_size 160
+-max_inst 1500000

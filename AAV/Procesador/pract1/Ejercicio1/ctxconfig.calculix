@@ -1,0 +1,5 @@
+[ Context 0 ]
+exe = calculix_base.i386
+args = -i hyperviscoplastic
+cwd = 454.calculix
+StdOut = /dev/null
