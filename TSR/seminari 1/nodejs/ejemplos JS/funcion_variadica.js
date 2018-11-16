@@ -1,0 +1,10 @@
+// Variadic function demonstration (arguments is a special variable).[59]
+
+var sum = function() {
+    var i, x = 0;
+    for (i = 0; i < arguments.length; ++i) {
+        x += arguments[i];
+    }
+    return x;
+}
+sum(1, 2, 3); // returns 6

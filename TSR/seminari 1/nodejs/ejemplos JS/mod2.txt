@@ -1,0 +1,7 @@
+{ z: 22, fun: [Function], getY: [Function] }
+22
+136
+101.45454545454545
+12
+{ z: -1002, fun: [Function], getY: [Function] }
+102.0119760479042
