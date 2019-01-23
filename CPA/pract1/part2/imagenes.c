@@ -105,32 +105,29 @@ int Filtro(int pasos, int radio, struct pixel **ppsImagenOrg, struct pixel **pps
     for (j = -radio; j <= radio; j++)
       ppdBloque[i + radio][j + radio] = (radio - abs(i)) * (radio - abs(i)) + (radio - abs(j)) * (radio - abs(j)) + 1;
  
-  for (p = 0; p < pasos; p++) {
-    #pragma omp paralell for private(red,green,blue,l,v,tot,k,j)
+ for (p = 0; p < pasos; p++) {
+    #pragma omp parallel for private(j, k, l, tot, v, resultado_r, resultado_g, resultado_b)
     for (i = 0; i < n; i++) {
-      //#pragma omp paralell for private(red,green,blue,l,v,tot,k)
       for (j = 0; j < m; j++) {
-        resultado.r = 0;
-        resultado.g = 0;
-        resultado.b = 0;
+        resultado_r = 0;
+        resultado_g = 0;
+        resultado_b = 0;
         tot = 0;
-	//#pragma omp paralell for private(v,l) reduction(+:red,green,blue,tot)
         for (k = max(0, i - radio); k <= min(n - 1, i + radio); k++) {
-          //#pragma omp paralell for private(v) reduction(+:red,green,blue,tot)
           for (l = max(0, j - radio); l <= min(m - 1, j + radio); l++) {
             v = ppdBloque[k - i + radio][l - j + radio];
-            resultado.r += ppsImagenOrg[k][l].r * v;
-            resultado.g += ppsImagenOrg[k][l].g * v;
-            resultado.b += ppsImagenOrg[k][l].b * v;
+            resultado_r += ppsImagenOrg[k][l].r * v;
+            resultado_g += ppsImagenOrg[k][l].g * v;
+            resultado_b += ppsImagenOrg[k][l].b * v;
             tot += v;
           }
         }
-        resultado.r /= tot;
-        resultado.g /= tot;
-        resultado.b /= tot;
-        ppsImagenDst[i][j].r = resultado.r;
-        ppsImagenDst[i][j].g = resultado.g;
-        ppsImagenDst[i][j].b = resultado.b;
+        resultado_r /= tot;
+        resultado_g /= tot;
+        resultado_b /= tot;
+        ppsImagenDst[i][j].r = resultado_r;
+        ppsImagenDst[i][j].g = resultado_g;
+        ppsImagenDst[i][j].b = resultado_b;
       }
     }
     if (p+1 < pasos)
