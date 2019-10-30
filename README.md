@@ -53,7 +53,7 @@ El objetivo de la asignatura es presentar los métodos, técnicas y herramientas
 
 En las clases de teoría se presentan los principios básicos del desarrollo de software orientado a objetos, en particular la arquitectura multi-capa, el modelado, diseño, implementación y pruebas. En las clases de seminario se refuerzan los conocimientos adquiridos con problemas y ejercicios, muchos de ellos relacionados con el proyecto de la asignatura. El desarrollo de un proyecto software completo será el objetivo principal de las clases de prácticas de laboratorio, en las que se trabajará en grupo.
 
-Video presentación: 
+- Video presentación: <br/>
 [![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/oVt93y_03B0/0.jpg)](https://www.youtube.com/watch?v=oVt93y_03B0)
 
 -----
@@ -99,9 +99,9 @@ Redes inalámbricas (802.11 y seguridad inalámbrica)
 En el apartado práctico se llevarán a cabo trabajos y prácticas que permitan contextualizar los conocimientos teóricos.
 
 Trabajo Cisco en Vídeo:
-- Etapa 1: 
+- Etapa 1: <br/>
 [![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/nrrlyKWIOk8/0.jpg)](https://www.youtube.com/watch?v=nrrlyKWIOk8)
-- Etapa 2: 
+- Etapa 2: <br/>
 [![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/z8lTWjYHqyM/0.jpg)](https://www.youtube.com/watch?v=z8lTWjYHqyM)
 
 -----
